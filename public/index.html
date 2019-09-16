@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="個人的作品集">
+    <meta name="author" content="Chao.Abin">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <base href="/">
+
+    <title>Michelle作品集</title>
+
+    <link href="frameWork/bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="frameWork/bootstrap-3.3.7-dist/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!-- time-line -->
+    <link href="css/timeline.css" rel="stylesheet">
+
+    <link href="css/main.css" rel="stylesheet">
+
+    <style type="text/css">
+        .absoluteCenter {
+            position: absolute;
+            margin: auto;
+            top: 0px;
+            bottom: 0px; 
+            right: 0px;
+            left: 0px;
+        }
+        .navbar-default {
+            background-color: #EFF4FB;
+            border-color: transparent;
+        }
+        .tab-circle {
+            width: 15px;
+            height: 15px;
+            background: transparent;
+            border-radius: 100%;
+            border: 5px #528ecc solid;
+            margin: auto;
+            margin-bottom: 5px;
+            visibility: hidden;
+        }
+        .navbar-default .navbar-nav > li > a {
+            color: #93B3E3;
+        }
+
+        .all-rights-reserved {
+            position: relative;
+            width: 100%;
+            margin: 30px 0px;
+            text-align: center;
+            color: #548FCE;
+        }
+        .abin-works-web {
+            display: none;
+        }
+        .abin-works-mobile {
+            display: inline-block;
+            margin-left: 15px;
+            margin-top: 8px;
+        }
+        .tab-circle {
+            position: relative;
+            top: 7px;
+            margin-right: 10px;
+            display: inline-block;
+        }
+        .pcBorder {
+            display: none;
+        }
+        @media (min-width: 768px) {
+            .abin-works-web {
+                position: fixed;
+                top: 80px;
+                left: 0px;
+                display: block;
+                z-index: 10;
+            }
+            .abin-works-mobile {
+                display: none;
+            }
+            .tab-circle {
+                top: 0px;
+                width: 15px;
+                height: 15px;
+                background: transparent;
+                border-radius: 100%;
+                border: 5px #528ecc solid;
+                margin: auto;
+                margin-bottom: 5px;
+                visibility: hidden;
+                display: block;
+            }
+            .pcBorder {
+                display: block;
+            }
+        }
+        @media (min-width: 992px) {
+            .all-rights-reserved {
+                position: fixed;
+                bottom: 40px;
+                left: 40px;
+                display: block;
+                text-align: left;
+                margin: 0px;
+            }
+        }
+        @media (min-width: 1200px) {
+        }
+    </style>
+
+    <!-- jquery -->
+    <script src="js/lib/jquery-3.1.0.min.js"></script>
+    <!-- angularJS -->
+    <script src="js/lib/angular1.4.8.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+    <!-- bootstrap -->
+    <script src="frameWork/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="frameWork/bootstrap-3.3.7-dist/js/ie-emulation-modes-warning.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="frameWork/bootstrap-3.3.7-dist/js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- data -->
+    <script src="data/data_profile.js"></script>
+    <script src="data/data_history.js"></script>
+
+    <script>
+        var app = angular.module("myApp", ["ngRoute"]);
+
+        app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
+            $routeProvider
+            .when("/", {
+                templateUrl : "tpl/home.html",
+                controller : "home"
+            })
+            .when("/home", {
+                templateUrl : "tpl/home.html",
+                controller : "home"
+            })
+            .when("/about", {
+                templateUrl : "tpl/about.html",
+                controller : "about"
+            })
+            .when("/profile", {
+                templateUrl : "tpl/profile.html",
+                controller : "profile"
+            })
+            .when("/profile_content/:index", {
+                templateUrl : "tpl/profile_content.html",
+                controller : "profile_content"
+            })
+            .when("/contact", {
+                templateUrl : "tpl/contact.html",
+                controller : "contact"
+            }).otherwise({redirectTo: '/'});
+
+            $locationProvider.html5Mode(true);
+        }]);
+
+        app.filter("toArray", function(){
+            return function(obj) {
+                var result = [];
+                angular.forEach(obj, function(val, key) {
+                    val['key'] = key;
+                    result.push(val);
+                });
+                return result;
+            };
+        });
+
+        app.factory('profileData', function() {
+            var profileData = {};
+            profileData = $.data_profile;
+
+            function getAll() {
+                return profileData;
+            }
+            function getByIndex(index) {
+                return profileData[index];
+            }
+            return {
+                getAll: getAll,
+                getByIndex: getByIndex
+            }
+        });
+
+        app.factory('historyData', function($sce) {
+            var historyData = $.data_history;
+
+            angular.forEach(historyData, function(value, key) {
+                value['title'] = $sce.trustAsHtml(value['title']);
+                value['subTitle'] = $sce.trustAsHtml(value['subTitle']);
+            });
+
+            var now = new Date();
+            historyData.push({
+                                "type": "today"
+                                ,"time": now.getFullYear() + "/" + (now.getMonth()+1) + "/" + now.getDate()
+                            });
+
+            function getAll() {
+                return historyData;
+            }
+
+            return {
+                getAll: getAll
+            }
+        });
+
+        app.controller("home", function ($scope) {
+            $('.navbar-collapse').collapse('hide');
+            // var history = historyData.getAll();
+            // $scope.history = history;
+        });
+        /*
+        app.controller("about", ['$scope', '$sce', 'historyData', 'canvasS'
+            , function ($scope, $sce, historyData, canvasS) {
+                canvasS.toMask("img/icon/mask.png", "img/head.jpg");
+                var history = historyData.getAll();
+                $scope.history = history;
+            }
+        ]);
+        */
+        app.controller("about", ['$scope', '$sce', 'historyData'
+            , function ($scope, $sce, historyData) {
+                $('.navbar-collapse').collapse('hide');
+                var history = historyData.getAll();
+                $scope.history = history;
+            }
+        ]);
+        app.controller("profile", function ($scope, profileData ) {
+            $('.navbar-collapse').collapse('hide');
+            var profile = profileData.getAll();
+            angular.forEach(profile, function(value, key) {
+                var timeNumber = new Date(value['joinTime']);
+                profile[key]['timeNumber'] = timeNumber.getTime()/100000;
+            });
+            console.log(profile);
+            $scope.profile = profile;
+        });
+        app.controller("profile_content", function ($scope, $routeParams, profileData ) {
+            $('.navbar-collapse').collapse('hide');
+            //預設顯示第一張圖
+            $scope.showId = 0;
+            $scope.profile = profileData.getByIndex($routeParams.index);
+            $scope.showPhoto = function(index) {
+                $scope.showId = index;
+            }
+            $scope.screenTop = function() {
+                $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, 700
+                );
+            }
+        });
+        app.controller("contact", function ($scope) {
+            $('.navbar-collapse').collapse('hide');
+            $scope.msg = "I love Paris";
+        });
+
+        app.directive("scroll", function ($window) {
+            return function(scope, element, attrs) {
+                angular.element($window).bind("scroll", function() {
+                     if (this.pageYOffset >= 150) {
+                         $("#goTop").css("display","block");
+                     } else {
+                         $("#goTop").css("display","none");
+                     }
+                    scope.$apply();
+                });
+            };
+        });
+    </script>
+
+    <!--script src="js/canvasService.js"></script-->
+</head>
+
+
+<body ng-app="myApp" style="background-color: #EFF4FB;" scroll >
+    <!-- 網頁外框 -->
+    <div class="pcBorder" style="position: fixed; width: 100%; height: 5px; top: 0px; left: 0px; z-index: 9999; background-color: #528ecc;"></div>
+    <div class="pcBorder" style="position: fixed; width: 100%; height: 5px; bottom: 0px; left: 0px; z-index: 9999; background-color: #528ecc;"></div>
+    <div class="pcBorder" style="position: fixed; width: 5px; height: 100%; top: 0px; left: 0px; z-index: 9999; background-color: #528ecc;"></div>
+    <div class="pcBorder" style="position: fixed; width: 5px; height: 100%; top: 0px; right: 0px; z-index: 9999; background-color: #528ecc;"></div>
+
+
+    <div class="abin-works-web">
+        <a href="home" style="text-decoration: none;">
+            <div class="tab-circle" style="top: 8px; visibility: visible;width: 18px;height: 18px;border: 6px #528ecc solid;"></div>
+            <p style="position: relative; top: 45px; transform: rotate(90deg); color: #548FCE;letter-spacing: 1px;">ABIN WORKS</p>
+        </a>
+    </div>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header" style="box-shadow: 0px 0px 4px 1px #d7dde5;">
+                <div class="abin-works-mobile">
+                    <a href="home" style="text-decoration: none;">
+                        <div class="tab-circle" style="visibility: visible;width: 18px;height: 18px;border: 6px #528ecc solid;margin-right: 5px;"></div>
+                        <p style="/*! position: relative; */ /*! top: 45px; */ /*! transform: rotate(90deg); */ color: #548FCE;letter-spacing: 1px;display: inline-block;">ABIN WORKS</p>
+                    </a>
+                </div>
+
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!--a class="navbar-brand" href="#">Abin作品集</a-->
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li id="home">
+                        <a href="home">
+                            <div class="tab-circle"></div>
+                            HOME<span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li id="about">
+                        <a href="about">
+                            <div class="tab-circle"></div>
+                            ABOUT<span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li id="profile">
+                        <a href="profile">
+                            <div class="tab-circle"></div>
+                            WORKS<span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li id="contact">
+                        <a href="contact">
+                            <div class="tab-circle"></div>
+                            CONTACT<span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" style="padding: 0px;" ng-view>
+    </div>
+
+
+    <div class="all-rights-reserved">
+        <p style="margin: 0px;">©ABIN WORKS</p>
+        <p style="margin: 0px;">ALL RIGHTS RESERVED.</p>
+    </div>
+</body>
+</html>
+

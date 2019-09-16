@@ -1,0 +1,77 @@
+<style>
+    #home div.tab-circle {
+        visibility: visible;
+    }
+    #home > a {
+        color: #548FCE;
+    }
+    .contentTitle {
+        font-size: 14pt;
+        color: #548FCE;
+    }
+    .contentDesc {
+        font-size: 12pt;
+        color: #93B3E3;
+    }
+    .contentBlock {
+        width: 60%;
+        height: 60%;
+        min-width: 250px;
+    }
+    .absoluteCenter.contentBlock {
+        top: 6%;
+        left: 15%;
+    }
+    /* pc尺寸 */
+    @media (min-width: 540px) {
+        .contentTitle {
+            font-size: 17pt;
+        }
+        .contentDesc {
+            font-size: 13pt;
+        }
+        .contentBlock {
+            height: 50%;
+        }
+        .absoluteCenter.contentBlock {
+            top: 6%;
+            left: 15%;
+        }
+    }
+    /* pc尺寸 */
+    @media (min-width: 768px) {
+        body {
+            overflow: hidden;
+        }
+        .contentTitle {
+            font-size: 20pt;
+        }
+        .contentDesc {
+            font-size: 16pt;
+        }
+    }
+</style>
+
+<div style="position: relative; width: 100%; max-width: 757px; min-width: 400px; margin: auto; top: 0px;bottom: 0px;">
+    <img src="img/icon/home.png" style="width: 100%; position: absolute; top: 0px; left: 0px;">
+    <img src="img/icon/home.png" style="width: 100%; top: 0px; left: 0px; visibility: hidden;">
+
+    <div class="absoluteCenter contentBlock">
+        <div class="absoluteCenter"> 
+            <div class="contentTitle">
+                <p>2017</p>
+                <span>Michelle aa WORKS</span>
+                <img style="margin-left: 10px;" src="img/icon/icon_phone.png">
+                <img style="margin-left: 10px;" src="img/icon/icon_pc.png">
+            </div>
+            <br>
+            <div class="contentDesc">
+                <p>JavaScript . Bootstrap . Backbone</p>
+                <p>PHP . CodeIgniter . Slim . Laravel</p>
+                <p>NodeJS . Grails . Python</p>
+                <p>MySQL . MongoDB</p>
+                <p>Android</p>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,56 @@
+<style>
+    p {
+        margin-bottom: 5px;
+    }
+</style>
+<div style="color: #5076AF; padding-top: 10px;">
+    <img src="" style="width: 20px;">
+    <div ng-if="profile.type == 'website'" style="margin-bottom: 10px;">
+        <img src="img/icon/icon_pc.png">
+    </div>
+    <div ng-if="profile.type == 'app'" >
+        <img src="img/icon/icon_phone.png" style="margin-bottom: 10px;">
+    </div>
+    <div style="border-top: 1px #4B79BD dotted;"></div>
+    <p style="font-size: 18pt; font-weight: bold; margin: 20px 0px;">{{profile.project}}</p>
+    <p style="margin-bottom: 30px; letter-spacing: 3px;">{{profile.description}}</p>
+    <p>分類：
+        <span>{{profile.type}}
+        		<span ng-if="profile.url">
+                        <a target="_blank" href="{{profile.url}}" style="margin-left: 5px;"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span>
+                        </a>
+                </span>
+    	</span>
+    </p>
+    <p>負責項目：<span>{{profile.responsible}}</span></p>
+    <p ng-if="profile.front">前端語言：
+        <span ng-repeat="val in profile.front">
+            {{val.lan}}{{val.lib?'(':''}}<span ng-repeat="lib in val.lib">{{lib+(!$last?'、':'')}}</span>{{val.lib?')':''}}{{!$last?'、':''}}
+        </span>
+    </p>
+    <p ng-if="profile.end">後端語言：
+        <span ng-repeat="val in profile.end">
+            {{val.lan}}{{val.lib?'(':''}}<span ng-repeat="lib in val.lib">{{lib+(!$last?'、':'')}}</span>{{val.lib?')':''}}{{!$last?'、':''}}
+        </span>
+    </p>
+    <p ng-if="profile.db">資料庫：
+        <span ng-repeat="val in profile.db">{{val}}</span>
+    </p>
+    <p>製作公司：<span>{{profile.company}}</span></p>
+    <p>時間：<span>{{profile.joinTime}}</span></p>
+
+    <div>
+        <div ng-if="profile.googlePlayUrl" style="display: inline-block;">
+            <a href="{{profile.googlePlayUrl}}">
+                <img src="img/icon/googleplay.png">
+            </a>
+        </div>
+        <div ng-if="profile.iTunesUrl" style="display: inline-block;">
+            <a href="{{profile.iTunesUrl}}">
+                <img src="img/icon/appstore.png">
+            </a>
+        </div>
+    </div>
+
+    <div style="border-top: 1px #4B79BD dotted; margin-bottom: 20px; margin-top: 20px;"></div>
+</div>

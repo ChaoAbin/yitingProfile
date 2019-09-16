@@ -1,0 +1,49 @@
+body {
+    padding-top: 70px;
+}
+@media (max-width: 480px) {
+        .col-xss-12 {
+            width: 100%;
+        }
+        .col-xss-11 {
+            width: 91.6667%;
+        }
+        .col-xss-10 {
+            width: 83.3333%;
+        }
+        .col-xss-9 {
+            width: 75%;
+        }
+        .col-xss-8 {
+            width: 66.6667%;
+        }
+        .col-xss-7 {
+            width: 58.3333%;
+        }
+        .col-xss-6 {
+            width: 50%;
+        }
+        .col-xss-5 {
+            width: 41.6667%;
+        }
+        .col-xss-4 {
+            width: 33.3333%;
+        }
+        .col-xss-3 {
+            width: 25%;
+        }
+        .col-xss-2 {
+            width: 16.6667%;
+        }
+        .col-xs-1 {
+            width: 8.33333%;
+        }
+}
+
+.profile_icon {
+    text-align: center;
+}
+.profile_icon >div, .profile_icon >p 
+{
+    cursor: pointer;
+}
