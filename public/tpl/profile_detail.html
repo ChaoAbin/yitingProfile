@@ -22,7 +22,7 @@
                 </span>
     	</span>
     </p>
-    <p>負責項目：<span>{{profile.responsible}}</span></p>
+    <p ng-if="profile.responsible">負責項目：<span>{{profile.responsible}}</span></p>
     <p ng-if="profile.front">前端語言：
         <span ng-repeat="val in profile.front">
             {{val.lan}}{{val.lib?'(':''}}<span ng-repeat="lib in val.lib">{{lib+(!$last?'、':'')}}</span>{{val.lib?')':''}}{{!$last?'、':''}}
@@ -37,7 +37,7 @@
         <span ng-repeat="val in profile.db">{{val}}</span>
     </p>
     <p>製作公司：<span>{{profile.company}}</span></p>
-    <p>時間：<span>{{profile.joinTime}}</span></p>
+    <p ng-if="profile.joinTime">時間：<span>{{profile.joinTime}}</span></p>
 
     <div>
         <div ng-if="profile.googlePlayUrl" style="display: inline-block;">

@@ -18,49 +18,7 @@
         -webkit-transform:rotate(45deg); /* Safari 和 Chrome */
         -o-transform:rotate(45deg);
     }
-    .page-header > .arrow{
-        position: relative;
-        left: 2px;
-        top: 23px;
-        font-size: 24pt;
-        color: white;
-
-        transform: rotate(-45deg);
-        -ms-transform:rotate(-45deg);     /* IE 9 */
-        -moz-transform:rotate(-45deg);    /* Firefox */
-        -webkit-transform:rotate(-45deg); /* Safari 和 Chrome */
-        -o-transform:rotate(-45deg);
-    }
-
-    .timeline::before {
-        width: 15px;
-        background-color: #EFF4FB;
-        border: 2.5px solid #8BB5E2;
-    }
-
-    ul.timeline::before {
-        left: 31px;
-    }
-
-    ul.timeline > li > .timeline-badge {
-        left: 13px;
-        width: 46px;
-        height: 46px;
-        background: #EFF4FB;
-    }
-
-    .timeline > li > .timeline-badge-border {
-        position: absolute;
-        z-index: -1;
-        left: 11px;
-        top: 14px;
-        width: 50px;
-        height: 50px;
-        background-color: #EFF4FB;
-        border: 2px solid #8BB5E2;
-        border-radius: 100%;
-    }
-
+    
     .triangle-right {
         position: relative;
         top: 34px;
@@ -70,8 +28,12 @@
         border-left: 30px solid #8BB5E2;
         border-bottom: 4px solid transparent;
     }
-    
-    .timeline-content {
+    .phone-pc-block {
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+    }
+    /* .timeline-content {
         position: relative;
         top: 0px;
         left: 80px;
@@ -91,10 +53,6 @@
     .timeline-block-web {
         display: none;
     }
-
-	.about-block {
-		margin-top: 0px;
-	}
 	.about-left-block {
 		padding-top: 0px;
 		left: 0px;
@@ -102,14 +60,7 @@
 		margin: 20px 0px;
 	}
     .about-head {
-        display: inline;
-        width: 200px;
-        position: relative;
-        left: 0px;
-    }
-    .phone-pc-block {
-        position: relative;
-        margin-top: 20px;
+        width: 100%;
     }
     @media (min-width: 768px) {
 	    .timeline-block-web {
@@ -118,12 +69,6 @@
 	        max-width: 600px;
 	        display: block;
 	    }
-        .about-head {
-            display: inline;
-            width: 200px;
-            position: relative;
-            left: 44px;
-        }
         .phone-pc-block {
             position: absolute;
             right: 0px;
@@ -131,77 +76,121 @@
         }
     }
     @media (min-width: 992px) {
-		.about-block {
-			margin-top: 70px;
-		}
-		.about-left-block {
-			padding-top: 70px;
-			left: 110px;
-			text-align: left;
-		}
     }
     @media (min-width: 1200px) {
+    } */
+
+
+    .heand {
+        position: relative;
+        color: #548FCE;
+    }
+    .my-photo {
+        width: 100%;
+    }
+    .name-block {
+        position: absolute;
+        height: 100px;
+        left: -20px;
+        top: 0px;
+        bottom: 90px;
+        margin: auto;
+    }
+    .name-block p {
+        margin-bottom: 0px;
+    }
+    .name-en {
+        font-size: 48px;
+    }
+    .name-ch {
+        font-size: 20px;
+    }
+    .about-block ul {
+        padding: 0px;
+    }
+    .timeline {
+        position: relative;
+        left: 50%;
+        color: #548FCE;
+        padding-right: 15px;
+    }
+    .timeline li {
+        list-style: none;
+    }
+    .timeline > li {
+        position: relative;
+        margin-left: 9px;
+        padding-left: 18px;
+        padding-bottom: 40px;
+    }
+    .timeline .thread {
+        position: absolute;
+        width: 1px;
+        height: calc(100% - 200px);
+        background-color: #548FCE;
+        padding-left: 0px;
+        left: -1px;
+    }
+    .circle {
+        position: absolute;
+        left: -9px;
+        width: 18px;
+        height: 18px;
+        display: inline-block;
+        vertical-align: top;
+        background-color: #548FCE;
+        border-radius: 100%;
+    }
+    .description h5 {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .description .work-list {
+        font-family: PingFangTC-Regular;
+        font-size: 16px;
+        color: #81A5CC;
+        text-align: justify;
     }
 </style>
 	<div class="about-block">
-	    <div class="col-xss-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 about-left-block">
-	        <img class="img-responsive about-head" src="img/961568.jpg">
+	    <div class="col-xss-12 col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <div class="heand">
+                <img class="img-responsive my-photo" src="img/my-michelle.png">
+                <div class="name-block">
+                    <p class="name-en">Michelle</p>
+                    <p class="name-ch">莊貽婷</p>
+                </div>
+            </div>
 
-	        <div class="timeline-block-web">
-
-	            <div class="page-header" style="margin: 0px; padding-bottom: 5px; text-align: center;">
-	                <img class="arrow" src="img/icon/btn_arrow.png">
-	            </div>
-
-	            <ul class="timeline" style="padding-right: 15px">
-	                <li ng-repeat="(key, val) in history | orderBy:'-time'" class="timeline-inverted">
-	                    <div ng-if="val.type == 'date'" class="timeline-badge success" style="position: relative; margin-bottom: 15px;" ng-style="{'background-color':val.icon_background}">
-	                        <p>{{val.time}}</p>
-	                    </div>
-
-	                    <div ng-if="val.type == 'history'" class="timeline-badge info" ng-style="{'background-color':val.icon_background}">
-	                        <i ng-if="val.icon.split(':')[0] == 'class'" class="{{val.icon.split(':')[1]}}" ></i>
-	                        <img class="absoluteCenter" ng-if="val.icon.split(':')[0] == 'link'" ng-src="{{val.icon.split(':')[1]}}" style="width: 24px;"></img>
-	                    </div>
-	                    <div ng-if="val.type == 'history'" class="timeline-badge-border info" ng-style="{'background-color':val.icon_background}">
-	                    </div>
-	                    
-	                    <div ng-if="val.type == 'history'" class="timeline-content">
-	                        <div class="triangle-right"></div>
-
-	                        <div class="timeline-heading">
-	                            <span>{{val.time}}</span>
-	                            <span ng-if="val.title != ''" ng-bind-html="val.title"></span>
-	                            <a ng-if="val.link != ''" href="{{val.link}}" target="_blank" style="float: right;">more</a>
-	                        </div>
-	                    </div>
-	                </li>
-	            </ul>
-	        </div>
+            <ul class="timeline" style="padding-right: 15px">
+                <li class="thread"></li>
+                <li></li>
+                <li ng-repeat="(key, val) in history | orderBy:'-time'">
+                    <div class="circle"></div>
+                    <div class="description">
+                        <h5>
+                            <span class="company">{{val.company}}</span>
+                            <span class="title">{{val.title}}</span>
+                            <br>
+                            <span class="time">{{val.time}}</span>
+                        </h5>
+                        <ul ng-repeat="(key2, val2) in val.description" class="work-list">
+                            <li>{{val2}}</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
 	    </div>
 
 	    <div class="col-xss-12 col-xs-12 col-sm-12 col-md-6 col-lg-6">
-	        <!--div style="text-align: left; margin: 20px 0px; border-radius: 8px; padding: 10px; background-color: rgb(221, 221, 221);">
-	            <p>WELCOME</p>
-	            <p>Abin 專長在系統分析、網站前後端程式設計、異質系統間API開發與介接。熟悉網站開發技術、略熟Android APP開發技術。</p>
-	            <p style="text-align: right">
-	                <a href="./#/about">more</a>
-	            </p>
-	        </div-->
-	        <div style="color: #548FCE; position: relative;">
-	            <p id="title" style="font-weight: bold; font-size: 15pt; margin-bottom: 20px; ">現職IIT香港商英迪思，專長在網站全端</p>
-	            <p>現職於IIT內的系統維運人員，擅長團隊合作，主要負責PHP的系統維運與RWD網頁開發，從網頁前端開始學習相關的IT技術，html/css/jquery一直到現在RWD的設計切版，都非常的拿手，伺服器方面，使用Linux作業系統與PHP/MySQL來進行開發，藉此可更瞭解伺服器的相關應用，熟悉這些工具之後，才能在與業主提案討論時，快速的提供意見，讓我在溝通與合作的技巧更卓越，解決問題的能力，和案件時程的規劃，皆有專業的水準。</p>
-	            <p>可獨立作業，從與業主接洽需求、系統分析、資料庫的規劃、網頁切版，擁有四年多的設計經歷，一路從網頁前端，進步到全端網站設計師，具有豐富的實戰經驗，已經準備好要找個舞台來好好施展身手了。</p>
+	        <div style="color: #548FCE; position: relative; margin-top: 70px;">
+	            <p id="title" style="font-weight: bold; font-size: 15pt; margin-bottom: 20px; ">UX/UI 設計師，專長平面設計、CIS設計、UX/UI設計</p>
+                <p>Hi, I'm Michelle</p>
+                <br>
+	            <p>擅長平面設計、CIS設計、UX/UI設計，樂於與不同領域的專業人士溝通與合作嘗試不同的可能性，並且用心專注於細節讓團隊合作效率提升，以全面的思維解決問題，具備從產品策略至設計實踐的專業與視野。</p>
 
-	            <p style="margin: 18px 0px 18px 0px;">技術</p>
-	            <div>網頁前端：HTML5、CSS3、JavaScript</div>
-	            <div>前端框架：Bootstrap、angularJS、backbone</div>
-	            <div>網頁後端：PHP、nodeJS、Grails、python</div>
-	            <div>資料庫：MySQL、MongoDB</div>
-	            <div>手機程式：Android</div>
-	            <div>版本控管：SVN、Git</div>
-	            <div>作業系統：Windows、Linux(CentOS、Ubuntu)</div>
-
+	            <p style="margin: 18px 0px 18px 0px;">擅長工具</p>
+	            <div>Sketch | Adobe XD | Illustrator | Photoshop</div>
                 <div class="phone-pc-block">
                     <img style="margin-left: 10px;" src="img/icon/icon_phone.png">
                     <img style="margin-left: 10px;" src="img/icon/icon_pc.png">

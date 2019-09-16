@@ -1,4 +1,10 @@
 <style>
+    #profile div.tab-circle {
+        visibility: visible;
+    }
+    #profile > a {
+        color: #548FCE;
+    }
     .photoBar {
         height: 30px;
         margin-bottom: 10px;
@@ -103,18 +109,14 @@
 </div>
 
 <div class="col-xss-12 col-xs-12 col-sm-9 col-sm-offset-2 col-md-7 col-md-offset-0 col-lg-7 col-lg-offset-0">
-    <!--div class="photoBar">
-        <div ng-repeat="val in profile.image" ng-click="showPhoto($index)" class="tag">{{$index}}</div>
+    <div style="text-align: right;">
+        <img src="img/icon/btn_close.png" ng-click="pageBack()">
     </div>
-
-    <div class="photoView">
-        <img ng-repeat="val in profile.image" ng-show="showId=={{$index}}" class="photoInView" ng-src="{{val.img}}">
-    </div-->
-    <div ng-if="profile.type == 'website'" ng-repeat="val in profile.image" style="margin-bottom: 20px;">
+    <div ng-if="profile.tpl == 'website'" ng-repeat="val in profile.image" style="margin-bottom: 20px;">
         <p style="color: #5076AF;"><span>{{($index+1) + ". "}}</span>{{val.desc}}</p>
         <img class="photoInView" ng-src="{{val.img}}">
     </div>
-    <div class="img-block" ng-if="profile.type.indexOf('app') != -1" ng-repeat="val in profile.image" style="margin-bottom: 20px;">
+    <div class="img-block" ng-if="profile.tpl.indexOf('app') != -1" ng-repeat="val in profile.image" style="margin-bottom: 20px;">
         <div ng-if="$index == 0" >
             <div style="position: relative; display: inline-block;">
                 <p style="color: #5076AF; text-align: left;"><span>{{($index+1) + ". "}}</span>{{val.desc}}/{{profile.image[$index+1].desc}}</p>

@@ -18,11 +18,14 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="frameWork/bootstrap-3.3.7-dist/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
     <!-- time-line -->
-    <link href="css/timeline.css" rel="stylesheet">
+    <!-- <link href="css/timeline.css" rel="stylesheet"> -->
 
     <link href="css/main.css" rel="stylesheet">
 
     <style type="text/css">
+        body {
+          font-family: PingFangTC-Regular;
+        }
         .absoluteCenter {
             position: absolute;
             margin: auto;
@@ -56,10 +59,10 @@
             text-align: center;
             color: #548FCE;
         }
-        .abin-works-web {
+        .works-web {
             display: none;
         }
-        .abin-works-mobile {
+        .works-mobile {
             display: inline-block;
             margin-left: 15px;
             margin-top: 8px;
@@ -74,14 +77,14 @@
             display: none;
         }
         @media (min-width: 768px) {
-            .abin-works-web {
+            .works-web {
                 position: fixed;
                 top: 80px;
                 left: 0px;
                 display: block;
                 z-index: 10;
             }
-            .abin-works-mobile {
+            .works-mobile {
                 display: none;
             }
             .tab-circle {
@@ -199,11 +202,11 @@
                 value['subTitle'] = $sce.trustAsHtml(value['subTitle']);
             });
 
-            var now = new Date();
-            historyData.push({
-                                "type": "today"
-                                ,"time": now.getFullYear() + "/" + (now.getMonth()+1) + "/" + now.getDate()
-                            });
+            // var now = new Date();
+            // historyData.push({
+            //                     "type": "today"
+            //                     ,"time": now.getFullYear() + "/" + (now.getMonth()+1) + "/" + now.getDate()
+            //                 });
 
             function getAll() {
                 return historyData;
@@ -235,16 +238,20 @@
                 $scope.history = history;
             }
         ]);
-        app.controller("profile", function ($scope, profileData ) {
-            $('.navbar-collapse').collapse('hide');
-            var profile = profileData.getAll();
-            angular.forEach(profile, function(value, key) {
-                var timeNumber = new Date(value['joinTime']);
-                profile[key]['timeNumber'] = timeNumber.getTime()/100000;
-            });
-            console.log(profile);
-            $scope.profile = profile;
-        });
+        app.controller("profile", ['$scope', '$sce', 'profileData'
+            , function ($scope, $sce, profileData ) {
+              $('.navbar-collapse').collapse('hide');
+              var profile = profileData.getAll();
+              angular.forEach(profile, function(value, key) {
+                  var timeNumber = new Date(value['joinTime']);
+                  profile[key]['timeNumber'] = timeNumber.getTime()/100000;
+              });
+              $scope.thisCanBeusedInsideNgBindHtml = function(someHtmlVar) {
+                return $sce.trustAsHtml(someHtmlVar);
+              };
+              $scope.profile = profile;
+            }
+        ]);
         app.controller("profile_content", function ($scope, $routeParams, profileData ) {
             $('.navbar-collapse').collapse('hide');
             //預設顯示第一張圖
@@ -258,7 +265,10 @@
                     scrollTop: 0 ,
                     }, 700
                 );
-            }
+            };
+            $scope.pageBack = function() {
+              window.history.back();
+            };
         });
         app.controller("contact", function ($scope) {
             $('.navbar-collapse').collapse('hide');
@@ -291,20 +301,20 @@
     <div class="pcBorder" style="position: fixed; width: 5px; height: 100%; top: 0px; right: 0px; z-index: 9999; background-color: #528ecc;"></div>
 
 
-    <div class="abin-works-web">
+    <div class="works-web">
         <a href="home" style="text-decoration: none;">
             <div class="tab-circle" style="top: 8px; visibility: visible;width: 18px;height: 18px;border: 6px #528ecc solid;"></div>
-            <p style="position: relative; top: 45px; transform: rotate(90deg); color: #548FCE;letter-spacing: 1px;">ABIN WORKS</p>
+            <p style="position: relative; top: 75px; transform: rotate(90deg); color: #548FCE;letter-spacing: 1px;">MICHELLE WORKS</p>
         </a>
     </div>
 
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header" style="box-shadow: 0px 0px 4px 1px #d7dde5;">
-                <div class="abin-works-mobile">
+                <div class="works-mobile">
                     <a href="home" style="text-decoration: none;">
                         <div class="tab-circle" style="visibility: visible;width: 18px;height: 18px;border: 6px #528ecc solid;margin-right: 5px;"></div>
-                        <p style="/*! position: relative; */ /*! top: 45px; */ /*! transform: rotate(90deg); */ color: #548FCE;letter-spacing: 1px;display: inline-block;">ABIN WORKS</p>
+                        <p style="position: relative; top: 45px; transform: rotate(90deg); color: #548FCE;letter-spacing: 1px;display: inline-block;">MICHELLE WORKS</p>
                     </a>
                 </div>
 
@@ -314,7 +324,6 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <!--a class="navbar-brand" href="#">Abin作品集</a-->
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
@@ -352,7 +361,7 @@
 
 
     <div class="all-rights-reserved">
-        <p style="margin: 0px;">©ABIN WORKS</p>
+        <p style="margin: 0px;">MICHELLE WORKS</p>
         <p style="margin: 0px;">ALL RIGHTS RESERVED.</p>
     </div>
 </body>
