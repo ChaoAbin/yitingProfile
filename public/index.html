@@ -202,12 +202,6 @@
                 value['subTitle'] = $sce.trustAsHtml(value['subTitle']);
             });
 
-            // var now = new Date();
-            // historyData.push({
-            //                     "type": "today"
-            //                     ,"time": now.getFullYear() + "/" + (now.getMonth()+1) + "/" + now.getDate()
-            //                 });
-
             function getAll() {
                 return historyData;
             }
@@ -218,21 +212,12 @@
         });
 
         app.controller("home", function ($scope) {
+            window.scrollTo(0, 0);
             $('.navbar-collapse').collapse('hide');
-            // var history = historyData.getAll();
-            // $scope.history = history;
         });
-        /*
-        app.controller("about", ['$scope', '$sce', 'historyData', 'canvasS'
-            , function ($scope, $sce, historyData, canvasS) {
-                canvasS.toMask("img/icon/mask.png", "img/head.jpg");
-                var history = historyData.getAll();
-                $scope.history = history;
-            }
-        ]);
-        */
         app.controller("about", ['$scope', '$sce', 'historyData'
             , function ($scope, $sce, historyData) {
+                window.scrollTo(0, 0);
                 $('.navbar-collapse').collapse('hide');
                 var history = historyData.getAll();
                 $scope.history = history;
@@ -240,6 +225,7 @@
         ]);
         app.controller("profile", ['$scope', '$sce', 'profileData'
             , function ($scope, $sce, profileData ) {
+              window.scrollTo(0, 0);
               $('.navbar-collapse').collapse('hide');
               var profile = profileData.getAll();
               angular.forEach(profile, function(value, key) {
@@ -252,25 +238,32 @@
               $scope.profile = profile;
             }
         ]);
-        app.controller("profile_content", function ($scope, $routeParams, profileData ) {
-            $('.navbar-collapse').collapse('hide');
-            //預設顯示第一張圖
-            $scope.showId = 0;
-            $scope.profile = profileData.getByIndex($routeParams.index);
-            $scope.showPhoto = function(index) {
-                $scope.showId = index;
+        app.controller("profile_content", ['$scope', '$routeParams', '$sce', 'profileData'
+            , function ($scope, $routeParams, $sce, profileData ) {
+              window.scrollTo(0, 0);
+              $('.navbar-collapse').collapse('hide');
+              //預設顯示第一張圖
+              $scope.showId = 0;
+              $scope.profile = profileData.getByIndex($routeParams.index);
+              $scope.showPhoto = function(index) {
+                  $scope.showId = index;
+              }
+              $scope.screenTop = function() {
+                  $('body,html').animate({
+                      scrollTop: 0 ,
+                      }, 700
+                  );
+              };
+              $scope.pageBack = function() {
+                window.history.back();
+              };
+              $scope.thisCanBeusedInsideNgBindHtml = function(someHtmlVar) {
+                return $sce.trustAsHtml(someHtmlVar);
+              };
             }
-            $scope.screenTop = function() {
-                $('body,html').animate({
-                    scrollTop: 0 ,
-                    }, 700
-                );
-            };
-            $scope.pageBack = function() {
-              window.history.back();
-            };
-        });
+        ]);
         app.controller("contact", function ($scope) {
+            window.scrollTo(0, 0);
             $('.navbar-collapse').collapse('hide');
             $scope.msg = "I love Paris";
         });

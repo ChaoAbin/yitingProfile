@@ -4,6 +4,9 @@
     }
 </style>
 <div style="color: #5076AF; padding-top: 10px;">
+    <div style="text-align: right;">
+        <img src="img/icon/btn_close.png" ng-click="pageBack()">
+    </div>
     <img src="" style="width: 20px;">
     <div ng-if="profile.type == 'website'" style="margin-bottom: 10px;">
         <img src="img/icon/icon_pc.png">
@@ -12,8 +15,9 @@
         <img src="img/icon/icon_phone.png" style="margin-bottom: 10px;">
     </div>
     <div style="border-top: 1px #4B79BD dotted;"></div>
-    <p style="font-size: 18pt; font-weight: bold; margin: 20px 0px;">{{profile.project}}</p>
-    <p style="margin-bottom: 30px; letter-spacing: 3px;">{{profile.description}}</p>
+    <p style="font-size: 18pt; font-weight: bold; margin: 20px 0px 0px 0px;">{{profile.title}}</p>
+    <p ng-if="profile.subTitle" style="font-size: 18pt; font-weight: bold; margin: 0px 0px 20px 0px;">{{profile.subTitle}}</p>
+    <p style="margin-bottom: 30px; letter-spacing: 3px;" ng-bind-html="thisCanBeusedInsideNgBindHtml(profile.description)"></p>
     <p>分類：
         <span>{{profile.type}}
         		<span ng-if="profile.url">

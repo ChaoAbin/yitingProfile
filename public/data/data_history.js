@@ -2,7 +2,8 @@ $.data_history = [{
 	"company": "協作雲端科技有限公司"
 	,"title": "UI/UX設計師"
 	,"description": [
-		".Web的UI/UX設計"
+		".主負責 APP的UI/UX設計"
+		, ".Web的UI/UX設計"
 		, ".CIS企業識別系統設計"
 		, ".公司形象視覺相關設計"
 	]
