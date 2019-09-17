@@ -6,6 +6,7 @@
         color: #548FCE;
     }
     .profile-content {
+        position: relative;
         box-shadow: 0px 4px 9px #ABBDCF;
         background: white;
     }
@@ -13,7 +14,7 @@
         margin: 15px 0px;
         cursor: pointer;
     }
-    .profile-list:hover {
+    .profile-list:hover .profile-content {
         animation-name: mouseOverProfile;
         animation-duration:2s;
         animation-iteration-count:infinite;
@@ -49,10 +50,24 @@
             top: -20px;
         }
     }
+
+    .go-top {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        color: #5076AF;
+        font-size: 14pt;
+
+        display: none;
+        padding: 10px;
+        border: 1px solid;
+        border-radius: 100%;
+        background: #fff;
+    }
 </style>
 
 <div class="col-xss-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
-    <div ng-repeat="(k, val) in profile | toArray | orderBy:'-timeNumber'" class="profile-list col-xss-12 col-xs-6 col-sm-4 col-md-3 col-lg-3" style="text-align: center">
+    <div ng-repeat="(k, val) in profile | toArray" class="profile-list col-xss-12 col-xs-6 col-sm-4 col-md-3 col-lg-3" style="text-align: center">
         <a href="profile_content/{{val.key}}">
             <div class="profile-content">
                 <div style="position: relative; overflow: hidden;">
@@ -60,11 +75,9 @@
                 </div>
                 <div style="padding: 10px; text-align: left; margin: 10px 0px; font-size: 12pt; min-height: 45px;" >
                     <div class="profile-title">
-                        <a href="profile_content/{{val.key}}">
-                            {{val.title}}
-                        </a>
-                        <!-- <img ng-if="val.type == 'website'" src="img/icon/icon_pc.png" style="float: right;">
-                        <img ng-if="val.type == 'app'" src="img/icon/icon_phone.png" style="float: right;"> -->
+                        {{val.title}}
+                        <img ng-if="val.type == 'UI/UX' && val.tpl.indexOf('web') != -1" src="img/icon/icon_pc.png" style="float: right; margin-left: 10px;">
+                        <img ng-if="val.type == 'UI/UX' && val.tpl.indexOf('app') != -1" src="img/icon/icon_phone.png" style="float: right; margin-left: 10px;">
                     </div>
                     <p class="profile-desc" ng-bind-html="thisCanBeusedInsideNgBindHtml(val.description)">
                     </p>
@@ -73,3 +86,5 @@
         </a>
     </div>
 </div>
+
+<div id="goTop" ng-click="screenTop()" class="go-top">Top</div>

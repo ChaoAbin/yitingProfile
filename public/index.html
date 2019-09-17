@@ -236,6 +236,12 @@
                 return $sce.trustAsHtml(someHtmlVar);
               };
               $scope.profile = profile;
+              $scope.screenTop = function() {
+                  $('body,html').animate({
+                      scrollTop: 0 ,
+                      }, 700
+                  );
+              };
             }
         ]);
         app.controller("profile_content", ['$scope', '$routeParams', '$sce', 'profileData'

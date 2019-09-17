@@ -1,5 +1,243 @@
 $.data_profile= [
 {
+    "type": "UI/UX"
+    ,"tpl": "app"
+    ,"title": "雲端作業系統-APP"
+    ,"subTitle": "2018第二次改版提案"
+    ,"description": "將現有的APP功能做UI/UX的改版提案，經過設計團隊比稿後與執行長提案報告，最終選定我的版本做後續的延伸設計"
+    ,"responsible": "UI/UX設計"
+    ,"company": "協作雲端科技有限公司"
+    ,"tool": "Sketch"
+    ,"icon": ""
+    ,"image": [
+        {
+            "img": ""
+            ,"desc": ""
+        }
+    ]
+    ,"joinTime": "2018"
+},{
+    "type": "UI/UX"
+    ,"tpl": "app"
+    ,"title": "雲端作業系統-APP"
+    ,"subTitle": "2018第二次改版執行-主頁"
+    ,"description": "設計團隊比稿後定稿版本「主頁」UI/UX設計"
+    ,"responsible": "UI/UX設計"
+    ,"company": "協作雲端科技有限公司"
+    ,"tool": "Sketch"
+    ,"icon": ""
+    ,"image": [
+        {
+            "img": ""
+            ,"desc": ""
+        }
+    ]
+    ,"joinTime": "2018"
+},{
+    "type": "UI/UX"
+    ,"tpl": "app"
+    ,"title": "雲端作業系統-APP"
+    ,"subTitle": "2018第二次改版執行-建立CoSpace"
+    ,"description": "建立CoSpace的流程修改並增加建立時可以邀請要加入的聯絡人"
+    ,"responsible": "UI/UX設計"
+    ,"company": "協作雲端科技有限公司"
+    ,"tool": "Sketch"
+    ,"icon": ""
+    ,"image": [
+        {
+            "img": ""
+            ,"desc": ""
+        }
+    ]
+    ,"joinTime": "2018"
+},{
+    "type": "UI/UX"
+    ,"tpl": "app"
+    ,"title": "雲端作業系統-APP"
+    ,"subTitle": "2018第二次改版執-聊天室"
+    ,"description": "聊天室裡會有的提示與各種訊息的呈現"
+    ,"responsible": "UI設計"
+    ,"company": "協作雲端科技有限公司"
+    ,"tool": "Sketch"
+    ,"icon": ""
+    ,"image": [
+        {
+            "img": ""
+            ,"desc": ""
+        }
+    ]
+    ,"joinTime": "2018"
+},{
+    "type": "UI/UX"
+    ,"tpl": "app"
+    ,"title": "雲端作業系統-APP"
+    ,"subTitle": "2018第二次改版執-個人桌面與CoSpace垃圾桶"
+    ,"description": "個人桌面與CoSpace垃圾桶的差異與新增、刪除、清空、復原規則"
+    ,"responsible": "UI/UX設計"
+    ,"company": "協作雲端科技有限公司"
+    ,"tool": "Sketch"
+    ,"icon": ""
+    ,"image": [
+        {
+            "img": ""
+            ,"desc": ""
+        }
+    ]
+    ,"joinTime": "2018"
+},{
+    "type": "UI/UX"
+    ,"tpl": "app/web"
+    ,"title": "雲端作業系統-APP"
+    ,"subTitle": "APP & WEB & Icon Font"
+    ,"description": "所有的icon設計完成後做成icon font運用在APP及WEB上，共用一套方便維護與新增"
+    ,"responsible": "icon設計與生成icon font"
+    ,"company": "協作雲端科技有限公司"
+    ,"tool": "Sketch"
+    ,"icon": ""
+    ,"image": [
+        {
+            "img": ""
+            ,"desc": ""
+        }
+    ]
+    ,"joinTime": "2018"
+},{
+    "type": "UI/UX"
+    ,"tpl": "app"
+    ,"title": "雲端作業系統-APP"
+    ,"subTitle": "2018第一次改版提案"
+    ,"description": "將現有的APP功能做UI的改版提案"
+    ,"responsible": "UI設計"
+    ,"company": "協作雲端科技有限公司"
+    ,"tool": "Sketch"
+    ,"icon": ""
+    ,"image": [
+        {
+            "img": ""
+            ,"desc": ""
+        }
+    ]
+    ,"joinTime": "2017"
+},{
+    "type": "UI/UX"
+    ,"tpl": "app"
+    ,"title": "雲端作業系統-APP"
+    ,"subTitle": "舊版公有雲＆私有雲登入提案"
+    ,"description": "雲端作業系統-APP版本分為公有雲跟私有雲的登入UI提案"
+    ,"responsible": "UI設計"
+    ,"company": "協作雲端科技有限公司"
+    ,"tool": "Sketch"
+    ,"icon": ""
+    ,"image": [
+        {
+            "img": ""
+            ,"desc": ""
+        }
+    ]
+    ,"joinTime": "2018"
+},{
+    "type": "UI/UX"
+    ,"tpl": "app"
+    ,"title": "雲端作業系統-APP"
+    ,"subTitle": "Onboarding"
+    ,"description": "規劃打開APP後能簡單讓使用者了解可以使用的功能，並引導生澀的使用者開始體驗"
+    ,"responsible": "插畫內容與UI設計"
+    ,"company": "協作雲端科技有限公司"
+    ,"tool": "Sketch"
+    ,"icon": ""
+    ,"image": [
+        {
+            "img": ""
+            ,"desc": ""
+        }
+    ]
+    ,"joinTime": "2018"
+},{
+    "type": "UI/UX"
+    ,"tpl": "app"
+    ,"title": "Picowork 官網"
+    ,"subTitle": ""
+    ,"description": "依公司規劃的內容去做官網的設計與插圖"
+    ,"responsible": "插畫內容與UI設計"
+    ,"company": "協作雲端科技有限公司"
+    ,"tool": "Sketch"
+    ,"icon": ""
+    ,"image": [
+        {
+            "img": ""
+            ,"desc": ""
+        }
+    ]
+    ,"joinTime": "2018"
+},{
+    "type": "UI/UX"
+    ,"tpl": "app"
+    ,"title": "雲端作業系統-APP"
+    ,"subTitle": "2018第二次改版 框架提案"
+    ,"description": "將現有的APP功能做UI/UX的改版提案，經過設計團隊比稿後選定我的版本做整體框架的設計"
+    ,"responsible": "UI/UX設計"
+    ,"company": "協作雲端科技有限公司"
+    ,"tool": "Sketch"
+    ,"icon": ""
+    ,"image": [
+        {
+            "img": ""
+            ,"desc": ""
+        }
+    ]
+    ,"joinTime": "2018"
+},{
+    "type": "UI/UX"
+    ,"tpl": "app"
+    ,"title": "雲端作業系統-APP"
+    ,"subTitle": "2018第二次改版 登入"
+    ,"description": "改版登入流程，加入重置密碼與變更密碼的流程與判斷"
+    ,"responsible": "UI/UX設計"
+    ,"company": "協作雲端科技有限公司"
+    ,"tool": "Sketch"
+    ,"icon": ""
+    ,"image": [
+        {
+            "img": ""
+            ,"desc": ""
+        }
+    ]
+    ,"joinTime": "2018"
+},{
+    "type": "平面設計"
+    ,"tpl": "app"
+    ,"title": "Picowork 國際發表會 發表內容設計"
+    ,"subTitle": "設計國際發表會的簡報與影片"
+    ,"description": "<a href='https://www.youtube.com/watch?v=MznWbx42DGM&t=5s' target='_blank'>影片內容</a>"
+    ,"responsible": "簡報與影片設計"
+    ,"company": "協作雲端科技有限公司"
+    ,"tool": "Sketch/AE"
+    ,"icon": ""
+    ,"image": [
+        {
+            "img": ""
+            ,"desc": ""
+        }
+    ]
+    ,"joinTime": "2018"
+},{
+    "type": "平面設計"
+    ,"tpl": "app"
+    ,"title": "Picowork - Cotera"
+    ,"subTitle": ""
+    ,"description": "以coterra「孕育及發展 \"合作、協作、協同\" 的大地」為發想設計 LOGO"
+    ,"responsible": "LOGO設計"
+    ,"company": "協作雲端科技有限公司"
+    ,"tool": "Sketch/AE"
+    ,"icon": ""
+    ,"image": [
+        {
+            "img": ""
+            ,"desc": ""
+        }
+    ]
+    ,"joinTime": "2018"
+},{
     "type": "平面設計"
     ,"tpl": "website"
     ,"title": "台灣設計展暨台北設計城市展"
