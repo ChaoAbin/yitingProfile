@@ -8,10 +8,10 @@
         <img src="img/icon/btn_close.png" ng-click="pageBack()">
     </div>
     <img src="" style="width: 20px;">
-    <div ng-if="profile.type == 'website'" style="margin-bottom: 10px;">
+    <div ng-if="profile.icon.indexOf('pc') != -1" style="margin-bottom: 10px;">
         <img src="img/icon/icon_pc.png">
     </div>
-    <div ng-if="profile.type == 'app'" >
+    <div ng-if="profile.icon.indexOf('mobile') != -1" >
         <img src="img/icon/icon_phone.png" style="margin-bottom: 10px;">
     </div>
     <div style="border-top: 1px #4B79BD dotted;"></div>
@@ -30,6 +30,11 @@
     <p ng-if="profile.front">前端語言：
         <span ng-repeat="val in profile.front">
             {{val.lan}}{{val.lib?'(':''}}<span ng-repeat="lib in val.lib">{{lib+(!$last?'、':'')}}</span>{{val.lib?')':''}}{{!$last?'、':''}}
+        </span>
+    </p>
+    <p ng-if="profile.tool">工具軟體：
+        <span>
+            {{profile.tool}}
         </span>
     </p>
     <p ng-if="profile.end">後端語言：
