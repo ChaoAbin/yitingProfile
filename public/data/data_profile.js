@@ -1,85 +1,76 @@
 $.data_profile= [
 {
     "type": "UI/UX"
-    ,"tpl": "app"
+    ,"tpl": "website"
     ,"title": "雲端作業系統-APP"
     ,"subTitle": "2018第二次改版提案"
     ,"description": "將現有的APP功能做UI/UX的改版提案，經過設計團隊比稿後與執行長提案報告，最終選定我的版本做後續的延伸設計"
     ,"responsible": "UI/UX設計"
     ,"company": "協作雲端科技有限公司"
     ,"tool": "Sketch"
-    ,"icon": ""
+    ,"cover": "/img/picowork/app-sec-update-cover.png"
+    ,"icon": ["mobile"]
     ,"image": [
         {
-            "img": ""
+            "img": "/img/picowork/app-sec-update.png"
             ,"desc": ""
         }
     ]
     ,"joinTime": "2018"
 },{
     "type": "UI/UX"
-    ,"tpl": "app"
+    ,"tpl": "website"
     ,"title": "雲端作業系統-APP"
     ,"subTitle": "2018第二次改版執行-主頁"
     ,"description": "設計團隊比稿後定稿版本「主頁」UI/UX設計"
     ,"responsible": "UI/UX設計"
     ,"company": "協作雲端科技有限公司"
     ,"tool": "Sketch"
-    ,"icon": ""
+    ,"cover": "/img/picowork/app-sec-update-main-page-UI-cover.png"
+    ,"icon": ["mobile"]
     ,"image": [
         {
-            "img": ""
+            "img": "/img/picowork/app-sec-update-main-page-UI.png"
+            ,"desc": ""
+        },
+        {
+            "img": "/img/picowork/app-sec-update-main-page-UX.png"
             ,"desc": ""
         }
     ]
     ,"joinTime": "2018"
 },{
     "type": "UI/UX"
-    ,"tpl": "app"
+    ,"tpl": "website"
     ,"title": "雲端作業系統-APP"
     ,"subTitle": "2018第二次改版執行-建立CoSpace"
     ,"description": "建立CoSpace的流程修改並增加建立時可以邀請要加入的聯絡人"
     ,"responsible": "UI/UX設計"
     ,"company": "協作雲端科技有限公司"
     ,"tool": "Sketch"
-    ,"icon": ""
+    ,"cover": "/img/picowork/app-sec-update-create-cospace-cover.png"
+    ,"icon": ["mobile"]
     ,"image": [
         {
-            "img": ""
+            "img": "/img/picowork/app-sec-update-create-cospace.png"
             ,"desc": ""
         }
     ]
     ,"joinTime": "2018"
 },{
     "type": "UI/UX"
-    ,"tpl": "app"
+    ,"tpl": "website"
     ,"title": "雲端作業系統-APP"
     ,"subTitle": "2018第二次改版執-聊天室"
     ,"description": "聊天室裡會有的提示與各種訊息的呈現"
     ,"responsible": "UI設計"
     ,"company": "協作雲端科技有限公司"
     ,"tool": "Sketch"
-    ,"icon": ""
+    ,"cover": "/img/picowork/app-sec-update-chat-room-cover.png"
+    ,"icon": ["mobile"]
     ,"image": [
         {
-            "img": ""
-            ,"desc": ""
-        }
-    ]
-    ,"joinTime": "2018"
-},{
-    "type": "UI/UX"
-    ,"tpl": "app"
-    ,"title": "雲端作業系統-APP"
-    ,"subTitle": "2018第二次改版執-個人桌面與CoSpace垃圾桶"
-    ,"description": "個人桌面與CoSpace垃圾桶的差異與新增、刪除、清空、復原規則"
-    ,"responsible": "UI/UX設計"
-    ,"company": "協作雲端科技有限公司"
-    ,"tool": "Sketch"
-    ,"icon": ""
-    ,"image": [
-        {
-            "img": ""
+            "img": "/img/picowork/app-sec-update-chat-room.png"
             ,"desc": ""
         }
     ]
@@ -93,92 +84,98 @@ $.data_profile= [
     ,"responsible": "icon設計與生成icon font"
     ,"company": "協作雲端科技有限公司"
     ,"tool": "Sketch"
-    ,"icon": ""
+    ,"cover": "/img/picowork/web-app-icon-font-cover.png"
+    ,"icon": ["mobile"]
     ,"image": [
         {
-            "img": ""
+            "img": "/img/picowork/web-app-icon-font.png"
             ,"desc": ""
         }
     ]
     ,"joinTime": "2018"
 },{
     "type": "UI/UX"
-    ,"tpl": "app"
+    ,"tpl": "website"
     ,"title": "雲端作業系統-APP"
     ,"subTitle": "2018第一次改版提案"
     ,"description": "將現有的APP功能做UI的改版提案"
     ,"responsible": "UI設計"
     ,"company": "協作雲端科技有限公司"
     ,"tool": "Sketch"
-    ,"icon": ""
+    ,"cover": "/img/picowork/app-update-proposal-cover.png"
+    ,"icon": ["mobile"]
     ,"image": [
         {
-            "img": ""
+            "img": "/img/picowork/app-update-proposal.png"
             ,"desc": ""
         }
     ]
     ,"joinTime": "2017"
 },{
     "type": "UI/UX"
-    ,"tpl": "app"
+    ,"tpl": "website"
     ,"title": "雲端作業系統-APP"
     ,"subTitle": "舊版公有雲＆私有雲登入提案"
     ,"description": "雲端作業系統-APP版本分為公有雲跟私有雲的登入UI提案"
     ,"responsible": "UI設計"
     ,"company": "協作雲端科技有限公司"
     ,"tool": "Sketch"
-    ,"icon": ""
+    ,"cover": "/img/picowork/app-old-version-cloud-proposal-cover.png"
+    ,"icon": ["mobile"]
     ,"image": [
         {
-            "img": ""
+            "img": "/img/picowork/app-old-version-cloud-proposal.png"
             ,"desc": ""
         }
     ]
     ,"joinTime": "2018"
 },{
     "type": "UI/UX"
-    ,"tpl": "app"
+    ,"tpl": "website"
     ,"title": "雲端作業系統-APP"
     ,"subTitle": "Onboarding"
     ,"description": "規劃打開APP後能簡單讓使用者了解可以使用的功能，並引導生澀的使用者開始體驗"
     ,"responsible": "插畫內容與UI設計"
     ,"company": "協作雲端科技有限公司"
     ,"tool": "Sketch"
-    ,"icon": ""
+    ,"cover": "/img/picowork/app-Onboarding-cover.png"
+    ,"icon": ["mobile"]
     ,"image": [
         {
-            "img": ""
+            "img": "/img/picowork/app-Onboarding.png"
             ,"desc": ""
         }
     ]
     ,"joinTime": "2018"
 },{
     "type": "UI/UX"
-    ,"tpl": "app"
+    ,"tpl": "website"
     ,"title": "Picowork 官網"
     ,"subTitle": ""
     ,"description": "依公司規劃的內容去做官網的設計與插圖"
     ,"responsible": "插畫內容與UI設計"
     ,"company": "協作雲端科技有限公司"
     ,"tool": "Sketch"
-    ,"icon": ""
+    ,"cover": "/img/picowork/Picowork-Official-website-cover.png"
+    ,"icon": ["mobile"]
     ,"image": [
         {
-            "img": ""
+            "img": "/img/picowork/Picowork-Official-website.png"
             ,"desc": ""
         }
     ]
     ,"joinTime": "2018"
 },{
     "type": "UI/UX"
-    ,"tpl": "app"
+    ,"tpl": "website"
     ,"title": "雲端作業系統-APP"
-    ,"subTitle": "2018第二次改版 框架提案"
-    ,"description": "將現有的APP功能做UI/UX的改版提案，經過設計團隊比稿後選定我的版本做整體框架的設計"
-    ,"responsible": "UI/UX設計"
+    ,"subTitle": "設計檔案library的整理與維護"
+    ,"description": "為了團隊的設計管理協作可以更順暢，整理了library打造一個可靠、有效率的工作模式"
+    ,"responsible": "UI設計"
     ,"company": "協作雲端科技有限公司"
     ,"tool": "Sketch"
-    ,"icon": ""
+    ,"cover": ""
+    ,"icon": ["mobile"]
     ,"image": [
         {
             "img": ""
@@ -188,51 +185,73 @@ $.data_profile= [
     ,"joinTime": "2018"
 },{
     "type": "UI/UX"
-    ,"tpl": "app"
+    ,"tpl": "website"
     ,"title": "雲端作業系統-APP"
     ,"subTitle": "2018第二次改版 登入"
     ,"description": "改版登入流程，加入重置密碼與變更密碼的流程與判斷"
     ,"responsible": "UI/UX設計"
     ,"company": "協作雲端科技有限公司"
     ,"tool": "Sketch"
-    ,"icon": ""
+    ,"cover": "/img/picowork/app-sec-update-login-UX-cover.png"
+    ,"icon": ["mobile"]
     ,"image": [
         {
-            "img": ""
+            "img": "/img/picowork/app-sec-update-login-UX.png"
             ,"desc": ""
         }
     ]
     ,"joinTime": "2018"
 },{
     "type": "平面設計"
-    ,"tpl": "app"
+    ,"tpl": "website"
     ,"title": "Picowork 國際發表會 發表內容設計"
-    ,"subTitle": "設計國際發表會的簡報與影片"
-    ,"description": "<a href='https://www.youtube.com/watch?v=MznWbx42DGM&t=5s' target='_blank'>影片內容</a>"
+    ,"subTitle": ""
+    ,"description": "設計國際發表會的簡報與影片"
     ,"responsible": "簡報與影片設計"
     ,"company": "協作雲端科技有限公司"
     ,"tool": "Sketch/AE"
+    ,"cover": "/img/picowork/Picowork-Cotera-Copy-cover.png"
     ,"icon": ""
     ,"image": [
         {
-            "img": ""
+            "img": "/img/picowork/Picowork-Cotera-Copy.png"
             ,"desc": ""
         }
     ]
+    ,"movie": '<iframe width="956" height="538" src="https://www.youtube.com/embed/MznWbx42DGM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
     ,"joinTime": "2018"
 },{
     "type": "平面設計"
-    ,"tpl": "app"
+    ,"tpl": "website"
     ,"title": "Picowork - Cotera"
     ,"subTitle": ""
     ,"description": "以coterra「孕育及發展 \"合作、協作、協同\" 的大地」為發想設計 LOGO"
     ,"responsible": "LOGO設計"
     ,"company": "協作雲端科技有限公司"
     ,"tool": "Sketch/AE"
+    ,"cover": "/img/picowork/Picowork-Cotera-cover.png"
     ,"icon": ""
     ,"image": [
         {
-            "img": ""
+            "img": "/img/picowork/Picowork-Cotera.png"
+            ,"desc": ""
+        }
+    ]
+    ,"joinTime": "2018"
+},{
+    "type": "UI/UX"
+    ,"tpl": "website"
+    ,"title": "雲端作業系統-Web"
+    ,"subTitle": "2018第二次網頁改版"
+    ,"description": ""
+    ,"responsible": "UI/UX設計"
+    ,"company": "協作雲端科技有限公司"
+    ,"tool": "Sketch"
+    ,"cover": "/img/picowork/web-sec-update-UI-cover.png"
+    ,"icon": ["pc"]
+    ,"image": [
+        {
+            "img": "/img/picowork/web-sec-update-UI.png"
             ,"desc": ""
         }
     ]
@@ -246,7 +265,8 @@ $.data_profile= [
     ,"responsible": "主視覺設計/展場地圖視覺"
     ,"company": "點睛設計公司"
     ,"tool": "Illustrator"
-    ,"icon": "img/icon/graphic/graphic_1.jpg"
+    ,"cover": "img/icon/graphic/graphic_1.jpg"
+    ,"icon": ""
     ,"image": [
         {
             "img": "img/graphic/1.jpg"
@@ -262,7 +282,8 @@ $.data_profile= [
     ,"responsible": "標章設計"
     ,"company": "點睛設計公司"
     ,"tool": "Illustrator"
-    ,"icon": "img/icon/graphic/graphic_2.jpg"
+    ,"cover": "img/icon/graphic/graphic_2.jpg"
+    ,"icon": ""
     ,"image": [
         {
             "img": "img/graphic/2_1.jpg"
@@ -281,7 +302,8 @@ $.data_profile= [
     ,"responsible": "主視覺設計/展場地圖視覺"
     ,"company": "點睛設計公司"
     ,"tool": "Illustrator"
-    ,"icon": "img/icon/graphic/graphic_3.jpg"
+    ,"cover": "img/icon/graphic/graphic_3.jpg"
+    ,"icon": ""
     ,"image": [
         {
             "img": "img/graphic/3.jpg"
@@ -297,7 +319,8 @@ $.data_profile= [
     ,"responsible": "LOGO設計"
     ,"company": "點睛設計公司"
     ,"tool": "Illustrator"
-    ,"icon": "img/icon/graphic/graphic_6.jpg"
+    ,"cover": "img/icon/graphic/graphic_6.jpg"
+    ,"icon": ""
     ,"image": [
         {
             "img": "img/graphic/6.jpg"
@@ -313,7 +336,8 @@ $.data_profile= [
     ,"responsible": "CIS設計"
     ,"company": "點睛設計公司"
     ,"tool": "Illustrator"
-    ,"icon": "img/icon/graphic/graphic_7.jpg"
+    ,"cover": "img/icon/graphic/graphic_7.jpg"
+    ,"icon": ""
     ,"image": [
         {
             "img": "img/graphic/7.jpg"
@@ -329,7 +353,8 @@ $.data_profile= [
     ,"responsible": "主視覺設計"
     ,"company": "點睛設計公司"
     ,"tool": "Illustrator"
-    ,"icon": "img/icon/graphic/graphic_8.jpg"
+    ,"cover": "img/icon/graphic/graphic_8.jpg"
+    ,"icon": ""
     ,"image": [
         {
             "img": "img/graphic/8.jpg"
@@ -345,7 +370,8 @@ $.data_profile= [
     ,"responsible": "主視覺設計/櫥窗設計"
     ,"company": "點睛設計公司"
     ,"tool": "Illustrator"
-    ,"icon": "img/icon/graphic/graphic_9.jpg"
+    ,"cover": "img/icon/graphic/graphic_9.jpg"
+    ,"icon": ""
     ,"image": [
             {
                     "img": "img/graphic/9.jpg"
@@ -361,7 +387,8 @@ $.data_profile= [
     ,"responsible": "LOGO設計/牆面形象圖設計"
     ,"company": "點睛設計公司"
     ,"tool": "Illustrator"
-    ,"icon": "img/icon/graphic/graphic_10.jpg"
+    ,"cover": "img/icon/graphic/graphic_10.jpg"
+    ,"icon": ""
     ,"image": [
         {
             "img": "img/graphic/10.jpg"
@@ -377,7 +404,8 @@ $.data_profile= [
     ,"responsible": "形象海報設計/電商介紹圖"
     ,"company": "點睛設計公司"
     ,"tool": "Illustrator"
-    ,"icon": "img/icon/graphic/graphic_11.jpg"
+    ,"cover": "img/icon/graphic/graphic_11.jpg"
+    ,"icon": ""
     ,"image": [
         {
             "img": "img/graphic/12.jpg"
@@ -396,7 +424,8 @@ $.data_profile= [
     ,"responsible": "LOGO設計"
     ,"company": "靡風科技有限公司"
     ,"tool": "Illustrator"
-    ,"icon": "img/icon/graphic/graphic_5.jpg"
+    ,"cover": "img/icon/graphic/graphic_5.jpg"
+    ,"icon": ""
     ,"image": [
         {
             "img": "img/graphic/5.jpg"
@@ -412,7 +441,8 @@ $.data_profile= [
     ,"responsible": "導覽遊程DM設計"
     ,"company": "點睛設計公司"
     ,"tool": "Illustrator"
-    ,"icon": "img/icon/graphic/graphic_13.jpg"
+    ,"cover": "img/icon/graphic/graphic_13.jpg"
+    ,"icon": ""
     ,"image": [
         {
             "img": "img/graphic/13.jpg"
@@ -428,7 +458,8 @@ $.data_profile= [
     ,"responsible": "季刊設計"
     ,"company": "點睛設計公司"
     ,"tool": "Illustrator"
-    ,"icon": "img/icon/graphic/graphic_14.jpg"
+    ,"cover": "img/icon/graphic/graphic_14.jpg"
+    ,"icon": ""
     ,"image": [
         {
             "img": "img/graphic/14.jpg"
@@ -447,7 +478,8 @@ $.data_profile= [
     ,"responsible": "手冊設計"
     ,"company": "點睛設計公司"
     ,"tool": "Illustrator"
-    ,"icon": "img/icon/graphic/graphic_15.jpg"
+    ,"cover": "img/icon/graphic/graphic_15.jpg"
+    ,"icon": ""
     ,"image": [
         {
             "img": "img/graphic/15.jpg"
@@ -463,7 +495,8 @@ $.data_profile= [
     ,"responsible": "名片設計/網站介紹圖設計"
     ,"company": "靡風科技有限公司"
     ,"tool": "Illustrator"
-    ,"icon": "img/icon/graphic/graphic_17.jpg"
+    ,"cover": "img/icon/graphic/graphic_17.jpg"
+    ,"icon": ""
     ,"image": [
         {
             "img": "img/graphic/17.jpg"
@@ -478,7 +511,8 @@ $.data_profile= [
     ,"responsible": "T-桖設計"
     ,"company": "點睛設計公司"
     ,"tool": "Illustrator"
-    ,"icon": "img/icon/graphic/graphic_16.jpg"
+    ,"cover": "img/icon/graphic/graphic_16.jpg"
+    ,"icon": ""
     ,"description": "(1)氣球的意象，代表著向上飛翔與充沛的活力，讓ＭＩＴ產業圖騰更加發揚光大，顏色以代表色桃紅色與橘色為主，讓整體感覺較為活潑。<br>(2)以英文的拼字遊戲為設計方向，底是以臺灣的造型加上MIT產業圖騰，使整體更加豐富，顏色以代表色桃紅色與淺藍色做搭配，使整體感覺較為輕快且活潑。"
     ,"image": [
         {
@@ -495,7 +529,8 @@ $.data_profile= [
     ,"responsible": "活動banner設計"
     ,"company": "靡風科技有限公司"
     ,"tool": "Illustrator"
-    ,"icon": "img/icon/graphic/graphic_18.jpg"
+    ,"cover": "img/icon/graphic/graphic_18.jpg"
+    ,"icon": ""
     ,"image": [
         {
             "img": "img/graphic/18.jpg"
@@ -511,7 +546,8 @@ $.data_profile= [
     ,"responsible": "網站介紹圖設計"
     ,"company": "靡風科技有限公司"
     ,"tool": "Illustrator"
-    ,"icon": "img/icon/graphic/graphic_19.jpg"
+    ,"cover": "img/icon/graphic/graphic_19.jpg"
+    ,"icon": ""
     ,"image": [
         {
             "img": "img/graphic/19.jpg"
@@ -527,7 +563,8 @@ $.data_profile= [
     ,"responsible": "網站介紹圖設計"
     ,"company": "靡風科技有限公司"
     ,"tool": "Illustrator"
-    ,"icon": "img/icon/graphic/graphic_20.jpg"
+    ,"cover": "img/icon/graphic/graphic_20.jpg"
+    ,"icon": ""
     ,"image": [
         {
             "img": "img/graphic/20.jpg"
@@ -543,7 +580,8 @@ $.data_profile= [
     ,"responsible": "網站介紹圖設計"
     ,"company": "靡風科技有限公司"
     ,"tool": "Illustrator"
-    ,"icon": "img/icon/graphic/graphic_21.jpg"
+    ,"cover": "img/icon/graphic/graphic_21.jpg"
+    ,"icon": ""
     ,"image": [
         {
             "img": "img/graphic/21.jpg"
@@ -559,7 +597,8 @@ $.data_profile= [
     ,"responsible": "品牌LOGO設計/包裝設計"
     ,"company": "靡風科技有限公司"
     ,"tool": "Illustrator"
-    ,"icon": "img/icon/packaging/packaging_1.jpg"
+    ,"cover": "img/icon/packaging/packaging_1.jpg"
+    ,"icon": ""
     ,"image": [
         {
             "img": "img/packaging/1.jpg"
@@ -575,7 +614,8 @@ $.data_profile= [
     ,"responsible": "品牌LOGO設計/包裝設計"
     ,"company": "靡風科技有限公司"
     ,"tool": "Illustrator"
-    ,"icon": "img/icon/packaging/packaging_2.jpg"
+    ,"cover": "img/icon/packaging/packaging_2.jpg"
+    ,"icon": ""
     ,"image": [
         {
             "img": "img/packaging/2.jpg"
@@ -591,7 +631,8 @@ $.data_profile= [
     ,"responsible": "品牌LOGO設計/包裝設計"
     ,"company": "靡風科技有限公司"
     ,"tool": "Illustrator"
-    ,"icon": "img/icon/packaging/packaging_3.jpg"
+    ,"cover": "img/icon/packaging/packaging_3.jpg"
+    ,"icon": ""
     ,"image": [
         {
             "img": "img/packaging/3.jpg"
@@ -607,7 +648,8 @@ $.data_profile= [
     ,"responsible": "品牌LOGO設計/包裝設計"
     ,"company": "靡風科技有限公司"
     ,"tool": "Illustrator"
-    ,"icon": "img/icon/packaging/packaging_4.jpg"
+    ,"cover": "img/icon/packaging/packaging_4.jpg"
+    ,"icon": ""
     ,"image": [
         {
             "img": "img/packaging/4.jpg"
@@ -623,7 +665,8 @@ $.data_profile= [
     ,"responsible": "包裝設計"
     ,"company": "點睛設計公司"
     ,"tool": "Illustrator"
-    ,"icon": "img/icon/packaging/packaging_5.jpg"
+    ,"cover": "img/icon/packaging/packaging_5.jpg"
+    ,"icon": ""
     ,"image": [
         {
             "img": "img/packaging/5.jpg"
@@ -639,7 +682,8 @@ $.data_profile= [
     ,"responsible": "包裝設計"
     ,"company": "靡風科技有限公司"
     ,"tool": "Illustrator"
-    ,"icon": "img/icon/packaging/packaging_6.jpg"
+    ,"cover": "img/icon/packaging/packaging_6.jpg"
+    ,"icon": ""
     ,"image": [
         {
             "img": "img/packaging/6.jpg"
@@ -655,7 +699,8 @@ $.data_profile= [
     ,"responsible": "包裝設計"
     ,"company": "點睛設計公司"
     ,"tool": "Illustrator"
-    ,"icon": "img/icon/packaging/packaging_7.jpg"
+    ,"cover": "img/icon/packaging/packaging_7.jpg"
+    ,"icon": ""
     ,"image": [
         {
             "img": "img/packaging/7.jpg"
@@ -671,7 +716,8 @@ $.data_profile= [
     ,"responsible": "包裝設計"
     ,"company": "點睛設計公司"
     ,"tool": "Illustrator"
-    ,"icon": "img/icon/packaging/packaging_8.jpg"
+    ,"cover": "img/icon/packaging/packaging_8.jpg"
+    ,"icon": ""
     ,"image": [
         {
             "img": "img/packaging/8.jpg"
@@ -687,7 +733,8 @@ $.data_profile= [
     ,"responsible": "電商平台的規劃與UI設計"
     ,"company": "靡風科技有限公司"
     ,"tool": "Illustrator"
-    ,"icon": "img/icon/GUI/GUI_1.jpg"
+    ,"cover": "img/icon/GUI/GUI_1.jpg"
+    ,"icon": ""
     ,"image": [
         {
             "img": "img/GUI/1.jpg"
@@ -703,7 +750,8 @@ $.data_profile= [
     ,"responsible": "品牌官網UI設計"
     ,"company": "靡風科技有限公司"
     ,"tool": "Illustrator"
-    ,"icon": "img/icon/GUI/GUI_2.jpg"
+    ,"cover": "img/icon/GUI/GUI_2.jpg"
+    ,"icon": ""
     ,"image": [
         {
             "img": "img/GUI/2.jpg"
@@ -719,7 +767,8 @@ $.data_profile= [
     ,"responsible": "品牌官網UI設計"
     ,"company": "靡風科技有限公司"
     ,"tool": "Illustrator"
-    ,"icon": "img/icon/GUI/GUI_3.jpg"
+    ,"cover": "img/icon/GUI/GUI_3.jpg"
+    ,"icon": ""
     ,"image": [
         {
             "img": "img/GUI/3.jpg"
@@ -735,148 +784,11 @@ $.data_profile= [
     ,"responsible": "線上雜誌UI設計及內容規劃"
     ,"company": "靡風科技有限公司"
     ,"tool": "Illustrator"
-    ,"icon": "img/icon/GUI/GUI_4.jpg"
+    ,"cover": "img/icon/GUI/GUI_4.jpg"
+    ,"icon": ""
     ,"image": [
         {
             "img": "img/GUI/4.jpg"
-            ,"desc": ""
-        }
-    ]
-}
-
-
-
-
-
-
-
-
-
-,{
-    "type": "平面設計"
-    ,"tpl": "website"
-    ,"title": "基勝集團"
-    ,"subTitle": "集團企業識別系統修改設計"
-    ,"description": "將基勝集團的英文縮寫K與S做結合，讓LOGO重新結合並帶入立體感，使得整體通滿霸氣的感覺，在配色上除了使用之前LOGO的藍色，加上鮮豔的綠色或橘紅色做搭配，使得整體感覺更有精神。<br>英文標準字的部分帶入LOGO的圓潤感，加上斜體使得字體結構較為特殊，賦予整體LOGO新的氣氛。"
-    ,"responsible": ""
-    ,"company": ""
-    ,"tool": "Illustrator"
-    ,"icon": "img/icon/graphic/graphic_4.jpg"
-    ,"image": [
-        {
-            "img": "img/graphic/4.jpg"
-            ,"desc": ""
-        }
-    ]
-},{
-    "type": "平面設計"
-    ,"tpl": "website"
-    ,"title": "MUSIC SHELL"
-    ,"subTitle": "音樂貝殼 水下MP3介紹圖"
-    ,"responsible": ""
-    ,"company": "靡風科技有限公司"
-    ,"tool": "Illustrator"
-    ,"icon": "img/icon/graphic/graphic_12.jpg"
-    ,"description": "運用MUSIC SHELL音樂貝殼的特色，表達出使用音樂貝殼時的情境。"
-    ,"image": [
-        {
-            "img": "img/graphic/12.jpg"
-            ,"desc": ""
-        }
-    ]
-},{
-    "type": "平面設計"
-    ,"tpl": "website"
-    ,"title": "角色設計"
-    ,"subTitle": ""
-    ,"description": "「黑熊來了」~<br>「黑熊」是台灣原生種保育動物，牠們的野外棲息地遭到人為破壞，希望大家對台灣黑熊保育有更深的認識，為牠設計一款造型寶寶。<br><br>「花」<br>以花為主題的餐廳，為其設計一款形象寶寶，將餐廳提供最好的服務品質以紳士服務生的意像表現出來。<br><br>「GO!環保」<br>以環保為主題，並運用環保的代表顏色「綠」為主色系，搭配漸層將立體感表現出來，發芽的綠葉就像是魔法一樣增添活力。"
-    ,"responsible": ""
-    ,"company": ""
-    ,"tool": "Illustrator"
-    ,"icon": "img/icon/graphic/graphic_22.jpg"
-    ,"image": [
-        {
-            "img": "img/graphic/22.jpg"
-            ,"desc": ""
-        }
-    ]
-},{
-    "type": "平面設計"
-    ,"tpl": "website"
-    ,"title": "夢遊"
-    ,"subTitle": ""
-    ,"description": "夢遊為體驗三感（視覺、聽覺、嗅覺）虛擬實境旅遊，為此服務設計LOGO，以虛幻的感覺做發想，將虛擬的意像運用有缺的文字呈現出來，LOGO裡巧妙的放入人形跟花草、飛機，將圖像表現在裡面。"
-    ,"responsible": ""
-    ,"company": ""
-    ,"tool": "Illustrator"
-    ,"icon": "img/icon/graphic/graphic_23.jpg"
-    ,"image": [
-        {
-            "img": "img/graphic/23.jpg"
-            ,"desc": ""
-        }
-    ]
-},{
-    "type": "平面設計"
-    ,"tpl": "website"
-    ,"title": "中國風字母設計"
-    ,"subTitle": ""
-    ,"description": "將中西文化的文字融和在一起，激盪出以臉譜為發想，拓展英文字母的變化性，並用其組合成圖案意像，單看任一字母都有各自的風格。"
-    ,"responsible": ""
-    ,"company": ""
-    ,"tool": "Illustrator"
-    ,"icon": "img/icon/graphic/graphic_24.jpg"
-    ,"image": [
-        {
-            "img": "img/graphic/24.jpg"
-            ,"desc": ""
-        }
-    ]
-},{
-    "type": "視覺使用者介面"
-    ,"tpl": "website"
-    ,"title": "靡風科技有限公司"
-    ,"subTitle": "公司識別系統及官網的規劃"
-    ,"description": "Minifun靡風科技是一家全球性公司，主要以產品創意設計的研究和開發創新的小工具，這次重新規劃公司官網，配色以原先網站綠色系做延伸，增添年輕有活力的意象，並將公司的專案作品集的部分整理展示，期望給大家新的印象。<br>公司logo的部分以火箭的形象呈現，表達公司的願景，藉以呈現全球化的思維，致力推廣更好的合作模式。"
-    ,"responsible": ""
-    ,"company": "靡風科技有限公司"
-    ,"tool": "Illustrator"
-    ,"icon": "img/icon/GUI/GUI_5.jpg"
-    ,"image": [
-        {
-            "img": "img/GUI/5.jpg"
-            ,"desc": ""
-        }
-    ]
-},{
-    "type": "視覺使用者介面"
-    ,"tpl": "website"
-    ,"title": "MUSIC SHELL"
-    ,"subTitle": "商品購買網站"
-    ,"description": "“骨傳導”水下MP3-MUSIC SHELL是一款完全不需要耳機的防水音樂播放器，為其設計了商品購買網站。"
-    ,"responsible": ""
-    ,"company": "靡風科技有限公司"
-    ,"tool": "Illustrator"
-    ,"icon": "img/icon/GUI/GUI_6.jpg"
-    ,"image": [
-        {
-            "img": "img/GUI/6.jpg"
-            ,"desc": ""
-        }
-    ]
-},{
-    "type": "視覺使用者介面"
-    ,"tpl": "website"
-    ,"title": "美食特務"
-    ,"subTitle": "我要試吃網"
-    ,"description": "美食特務-我要試吃網主要是推薦各類休閒零食、沖泡飲品、包子等等的吃貨，提供讓一些想試吃的饕客可以來找尋新的購買目標，以食會友的概念將我們平台推廣讓大家知道。<br>品項或試吃人數多的時候我們也提供美食特務到場試吃服務，推薦最好吃的方法!。"
-    ,"responsible": ""
-    ,"company": "靡風科技有限公司"
-    ,"tool": "Illustrator"
-    ,"icon": "img/icon/GUI/GUI_7.jpg"
-    ,"image": [
-        {
-            "img": "img/GUI/7.jpg"
             ,"desc": ""
         }
     ]
