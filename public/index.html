@@ -278,6 +278,19 @@
               $scope.thisCanBeusedInsideNgBindHtml = function(someHtmlVar) {
                 return $sce.trustAsHtml(someHtmlVar);
               };
+              $scope.pageSwitch = {
+                back: function() {
+                    window.location.href = window.location.href.substr(0, window.location.href.lastIndexOf("/")) + "/" +(this.index - 1);
+                },
+                forward: function() {
+                    window.location.href = window.location.href.substr(0, window.location.href.lastIndexOf("/")) + "/" + (this.index + 1);
+                },
+                isEnd: function() {
+                  console.log("if: ", this, parseInt($routeParams.index))
+                  return ((profileData.getAll().length - 1) == parseInt($routeParams.index))
+                },
+                index: parseInt($routeParams.index)
+              }
             }
         ]);
         app.controller("contact", function ($scope) {
