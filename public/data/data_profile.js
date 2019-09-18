@@ -2,6 +2,24 @@ $.data_profile= [
 {
     "type": "UI/UX"
     ,"tpl": "website"
+    ,"title": "雲端作業系統-Web"
+    ,"subTitle": "2018第二次網頁改版"
+    ,"description": ""
+    ,"responsible": "UI/UX設計"
+    ,"company": "協作雲端科技有限公司"
+    ,"tool": "Sketch"
+    ,"cover": "/img/picowork/web-sec-update-UI-cover.png"
+    ,"icon": ["pc"]
+    ,"image": [
+        {
+            "img": "/img/picowork/web-sec-update-UI.png"
+            ,"desc": ""
+        }
+    ]
+    ,"joinTime": "2018"
+},{
+    "type": "UI/UX"
+    ,"tpl": "website"
     ,"title": "雲端作業系統-APP"
     ,"subTitle": "2018第二次改版提案"
     ,"description": "將現有的APP功能做UI/UX的改版提案，經過設計團隊比稿後與執行長提案報告，最終選定我的版本做後續的延伸設計"
@@ -71,6 +89,24 @@ $.data_profile= [
     ,"image": [
         {
             "img": "/img/picowork/app-sec-update-chat-room.png"
+            ,"desc": ""
+        }
+    ]
+    ,"joinTime": "2018"
+},{
+    "type": "UI/UX"
+    ,"tpl": "website"
+    ,"title": "雲端作業系統-APP"
+    ,"subTitle": "2018第二次改版 登入"
+    ,"description": "改版登入流程，加入重置密碼與變更密碼的流程與判斷"
+    ,"responsible": "UI/UX設計"
+    ,"company": "協作雲端科技有限公司"
+    ,"tool": "Sketch"
+    ,"cover": "/img/picowork/app-sec-update-login-UX-cover.png"
+    ,"icon": ["mobile"]
+    ,"image": [
+        {
+            "img": "/img/picowork/app-sec-update-login-UX.png"
             ,"desc": ""
         }
     ]
@@ -174,29 +210,11 @@ $.data_profile= [
     ,"responsible": "UI設計"
     ,"company": "協作雲端科技有限公司"
     ,"tool": "Sketch"
-    ,"cover": ""
+    ,"cover": "/img/picowork/cloud-os-app-Sketch-library-cover.png"
     ,"icon": ["mobile"]
     ,"image": [
         {
-            "img": ""
-            ,"desc": ""
-        }
-    ]
-    ,"joinTime": "2018"
-},{
-    "type": "UI/UX"
-    ,"tpl": "website"
-    ,"title": "雲端作業系統-APP"
-    ,"subTitle": "2018第二次改版 登入"
-    ,"description": "改版登入流程，加入重置密碼與變更密碼的流程與判斷"
-    ,"responsible": "UI/UX設計"
-    ,"company": "協作雲端科技有限公司"
-    ,"tool": "Sketch"
-    ,"cover": "/img/picowork/app-sec-update-login-UX-cover.png"
-    ,"icon": ["mobile"]
-    ,"image": [
-        {
-            "img": "/img/picowork/app-sec-update-login-UX.png"
+            "img": "/img/picowork/cloud-os-app-Sketch-library.png"
             ,"desc": ""
         }
     ]
@@ -241,21 +259,71 @@ $.data_profile= [
 },{
     "type": "UI/UX"
     ,"tpl": "website"
-    ,"title": "雲端作業系統-Web"
-    ,"subTitle": "2018第二次網頁改版"
-    ,"description": ""
-    ,"responsible": "UI/UX設計"
-    ,"company": "協作雲端科技有限公司"
-    ,"tool": "Sketch"
-    ,"cover": "/img/picowork/web-sec-update-UI-cover.png"
-    ,"icon": ["pc"]
+    ,"title": "美食特務"
+    ,"subTitle": "O2O電子商務經營模式為出發點規劃"
+    ,"description": "美食特務提供優惠餐卷、人氣食譜與聚餐活動等資訊，誠心推薦優質手作點心、休閒零食，以及居家料理生鮮食材與特色餐廳等，讓您體驗跟同事朋友一起分享超夯零食的樂趣、居家料理星級菜色宴客的生活品味也滿足您對餐酒聚會交朋友的需求。"
+    ,"responsible": "電商平台的規劃與UI設計"
+    ,"company": "靡風科技有限公司"
+    ,"tool": "Illustrator"
+    ,"cover": "img/icon/GUI/GUI_1.jpg"
+    ,"icon": ["pc", "mobile"]
     ,"image": [
         {
-            "img": "/img/picowork/web-sec-update-UI.png"
+            "img": "img/GUI/1.jpg"
             ,"desc": ""
         }
     ]
-    ,"joinTime": "2018"
+},{
+    "type": "UI/UX"
+    ,"tpl": "website"
+    ,"title": "MUSIC SHELL"
+    ,"subTitle": "官網設計"
+    ,"description": "“骨傳導”水下MP3-MUSIC SHELL是一款完全不需要耳機的防水音樂播放器，為其設計了官方網站，整體風格清爽並以單頁式的網站呈現，一進入網站就以情境式的大圖輪播，清楚表達MUSIC SHELL的主旨，內容特別邀請使用者現身分享使用心得，教使用者如何使用骨傳導的水下MP3，並貼心附有游泳訓練用的節拍音樂檔，網站附有多國翻譯，可以推廣給全世界喜歡游泳的人。"
+    ,"responsible": "品牌官網UI設計"
+    ,"company": "靡風科技有限公司"
+    ,"tool": "Illustrator"
+    ,"cover": "img/icon/GUI/GUI_2.jpg"
+    ,"icon": ["pc", "mobile"]
+    ,"image": [
+        {
+            "img": "img/GUI/2.jpg"
+            ,"desc": ""
+        }
+    ]
+},{
+    "type": "UI/UX"
+    ,"tpl": "website"
+    ,"title": "Freemind"
+    ,"subTitle": "煙灰攔阻器官網設計"
+    ,"description": "Freemind為煙灰攔阻器的商品品牌，LOGO以線條化的方式設計，網站配色以黑色、淡藍色搭配，塑造出穩重又帶點新意的品牌形象，模特兒的部分也特別選用質感型並穿著西裝，將整體網站形象提升，並將使用情境分類，讓使用者可以更了解Freemind的多種用途。"
+    ,"responsible": "品牌官網UI設計"
+    ,"company": "靡風科技有限公司"
+    ,"tool": "Illustrator"
+    ,"cover": "img/icon/GUI/GUI_3.jpg"
+    ,"icon": ["pc", "mobile"]
+    ,"image": [
+        {
+            "img": "img/GUI/3.jpg"
+            ,"desc": ""
+        }
+    ]
+},{
+    "type": "UI/UX"
+    ,"tpl": "website"
+    ,"title": "Magazine"
+    ,"subTitle": "科技線上雜誌規劃"
+    ,"description": "Magazine為公司規劃的新奇科技訊息分享平台，企劃成為線上雜誌，提供給國際上喜歡科技訊息的民眾觀看及訂閱。"
+    ,"responsible": "線上雜誌UI設計及內容規劃"
+    ,"company": "靡風科技有限公司"
+    ,"tool": "Illustrator"
+    ,"cover": "img/icon/GUI/GUI_4.jpg"
+    ,"icon": ["pc", "mobile"]
+    ,"image": [
+        {
+            "img": "img/GUI/4.jpg"
+            ,"desc": ""
+        }
+    ]
 },{
     "type": "平面設計"
     ,"tpl": "website"
@@ -721,74 +789,6 @@ $.data_profile= [
     ,"image": [
         {
             "img": "img/packaging/8.jpg"
-            ,"desc": ""
-        }
-    ]
-},{
-    "type": "視覺使用者介面"
-    ,"tpl": "website"
-    ,"title": "美食特務"
-    ,"subTitle": "O2O電子商務經營模式為出發點規劃"
-    ,"description": "美食特務提供優惠餐卷、人氣食譜與聚餐活動等資訊，誠心推薦優質手作點心、休閒零食，以及居家料理生鮮食材與特色餐廳等，讓您體驗跟同事朋友一起分享超夯零食的樂趣、居家料理星級菜色宴客的生活品味也滿足您對餐酒聚會交朋友的需求。"
-    ,"responsible": "電商平台的規劃與UI設計"
-    ,"company": "靡風科技有限公司"
-    ,"tool": "Illustrator"
-    ,"cover": "img/icon/GUI/GUI_1.jpg"
-    ,"icon": ""
-    ,"image": [
-        {
-            "img": "img/GUI/1.jpg"
-            ,"desc": ""
-        }
-    ]
-},{
-    "type": "視覺使用者介面"
-    ,"tpl": "website"
-    ,"title": "MUSIC SHELL"
-    ,"subTitle": "官網設計"
-    ,"description": "“骨傳導”水下MP3-MUSIC SHELL是一款完全不需要耳機的防水音樂播放器，為其設計了官方網站，整體風格清爽並以單頁式的網站呈現，一進入網站就以情境式的大圖輪播，清楚表達MUSIC SHELL的主旨，內容特別邀請使用者現身分享使用心得，教使用者如何使用骨傳導的水下MP3，並貼心附有游泳訓練用的節拍音樂檔，網站附有多國翻譯，可以推廣給全世界喜歡游泳的人。"
-    ,"responsible": "品牌官網UI設計"
-    ,"company": "靡風科技有限公司"
-    ,"tool": "Illustrator"
-    ,"cover": "img/icon/GUI/GUI_2.jpg"
-    ,"icon": ""
-    ,"image": [
-        {
-            "img": "img/GUI/2.jpg"
-            ,"desc": ""
-        }
-    ]
-},{
-    "type": "視覺使用者介面"
-    ,"tpl": "website"
-    ,"title": "Freemind"
-    ,"subTitle": "煙灰攔阻器官網設計"
-    ,"description": "Freemind為煙灰攔阻器的商品品牌，LOGO以線條化的方式設計，網站配色以黑色、淡藍色搭配，塑造出穩重又帶點新意的品牌形象，模特兒的部分也特別選用質感型並穿著西裝，將整體網站形象提升，並將使用情境分類，讓使用者可以更了解Freemind的多種用途。"
-    ,"responsible": "品牌官網UI設計"
-    ,"company": "靡風科技有限公司"
-    ,"tool": "Illustrator"
-    ,"cover": "img/icon/GUI/GUI_3.jpg"
-    ,"icon": ""
-    ,"image": [
-        {
-            "img": "img/GUI/3.jpg"
-            ,"desc": ""
-        }
-    ]
-},{
-    "type": "視覺使用者介面"
-    ,"tpl": "website"
-    ,"title": "Magazine"
-    ,"subTitle": "科技線上雜誌規劃"
-    ,"description": "Magazine為公司規劃的新奇科技訊息分享平台，企劃成為線上雜誌，提供給國際上喜歡科技訊息的民眾觀看及訂閱。"
-    ,"responsible": "線上雜誌UI設計及內容規劃"
-    ,"company": "靡風科技有限公司"
-    ,"tool": "Illustrator"
-    ,"cover": "img/icon/GUI/GUI_4.jpg"
-    ,"icon": ""
-    ,"image": [
-        {
-            "img": "img/GUI/4.jpg"
             ,"desc": ""
         }
     ]
