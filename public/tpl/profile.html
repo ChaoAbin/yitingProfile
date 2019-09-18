@@ -23,13 +23,19 @@
     .all-rights-reserved {
         display: none;
     }
-    .profile-title {
-        margin-bottom: 10px;
+    .profile-title, .profile-sub-title {
         font-size: 15px;
         color: #548FCE;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
     }
-    .profile-title > a{
-        color: #548FCE;
+    .profile-sub-title {
+        width: 100%;
+        height: 20px;
+        margin-bottom: 10px;
     }
     .profile-desc {
         font-size: 13px;
@@ -53,6 +59,8 @@
 
     .go-top {
         position: fixed;
+        width: 50px;
+        height: 50px;
         right: 20px;
         bottom: 20px;
         color: #5076AF;
@@ -64,21 +72,59 @@
         border-radius: 100%;
         background: #fff;
     }
+
+    .navbar-horizontal li.show .tab-circle {
+        visibility: visible;
+    }
+
+    .tab-circle.horizontal {
+        display: inline-block;
+        margin-bottom: 0px;
+        top: 4px;
+        margin-right: 2px;
+    }
+
+    .navbar-horizontal {
+        color: #548FCE;
+        margin-bottom: 20px;
+    }
+    .navbar-horizontal li:first-child {
+        margin-left: 0px;
+    }
+    .navbar-horizontal li {
+        margin-left: 20px;
+    }
+
+    .navbar-horizontal li:hover {
+        color: #333;
+        cursor: pointer;
+    }
 </style>
 
 <div class="col-xss-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
-    <div ng-repeat="(k, val) in profile | toArray" class="profile-list col-xss-12 col-xs-6 col-sm-4 col-md-3 col-lg-3" style="text-align: center">
-        <a href="profile_content/{{val.key}}">
+    <div class="navbar-collapse collapse" style="position: fixed; z-index: 1; background-color: #EFF4FB; width: 100%;">
+        <ul class="nav navbar-nav navbar-horizontal">
+            <li class="{{val == showType ? 'show' : ''}}" ng-repeat="(k, val) in type" ng-click="switchType(val)">
+                <div class="tab-circle horizontal"></div>
+                {{val}}
+                <span class="sr-only">(current)</span>
+            </li>
+        </ul>
+    </div>
+    <div class="col-xss-12 col-xs-12 col-sm-12 col-md-12 col-lg-12" style="height: 40px;"></div>
+    <div ng-repeat="(k, val) in profile | toArray" ng-if="val['type'] == showType || showType == '全部'" class="profile-list col-xss-12 col-xs-6 col-sm-4 col-md-3 col-lg-3" style="text-align: center">
+        <a href="profile_content/{{val.key}}" style="text-decoration:none;">
             <div class="profile-content">
                 <div style="position: relative; overflow: hidden;">
-                    <img style="width: 100%; border-bottom: 1px solid #ABBDCF;" ng-src="{{val.icon}}">                
+                    <img style="width: 100%; border-bottom: 1px solid #E2E9F1;" ng-src="{{val.cover}}">                
                 </div>
                 <div style="padding: 10px; text-align: left; margin: 10px 0px; font-size: 12pt; min-height: 45px;" >
                     <div class="profile-title">
                         {{val.title}}
-                        <img ng-if="val.type == 'UI/UX' && val.tpl.indexOf('web') != -1" src="img/icon/icon_pc.png" style="float: right; margin-left: 10px;">
-                        <img ng-if="val.type == 'UI/UX' && val.tpl.indexOf('app') != -1" src="img/icon/icon_phone.png" style="float: right; margin-left: 10px;">
+                        <img ng-if="val.type == 'UI/UX' && val.icon.indexOf('pc') != -1" src="img/icon/icon_pc.png" style="float: right; margin-left: 10px;">
+                        <img ng-if="val.type == 'UI/UX' && val.icon.indexOf('mobile') != -1" src="img/icon/icon_phone.png" style="float: right; margin-left: 10px;">
                     </div>
+                    <div class="profile-sub-title">{{val.subTitle}}</div>
                     <p class="profile-desc" ng-bind-html="thisCanBeusedInsideNgBindHtml(val.description)">
                     </p>
                 </div>

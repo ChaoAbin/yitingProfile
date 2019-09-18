@@ -236,12 +236,24 @@
                 return $sce.trustAsHtml(someHtmlVar);
               };
               $scope.profile = profile;
+              var type = ["全部"];
+              for(var i=0;i<profile.length;i++) {
+                if(type.indexOf(profile[i]['type']) == -1) {
+                  type.push(profile[i]['type']);
+                }
+              }
+              $scope.type = type;
               $scope.screenTop = function() {
                   $('body,html').animate({
                       scrollTop: 0 ,
                       }, 700
                   );
               };
+              $scope.showType = "全部";
+              $scope.switchType = function(showType) {
+                window.scrollTo(0, 0);
+                $scope.showType = showType;
+              }
             }
         ]);
         app.controller("profile_content", ['$scope', '$routeParams', '$sce', 'profileData'
