@@ -71,7 +71,9 @@
         padding: 10px;
         border: 1px solid;
         border-radius: 100%;
-        background: #fff;
+        background: #F7FAFF;
+        border-color: transparent;
+        cursor: pointer;
     }
 
     .navbar-horizontal li.show .tab-circle {
@@ -86,7 +88,7 @@
     }
 
     .navbar-horizontal {
-        color: #548FCE;
+        color: #93B3E3;
         margin-bottom: 20px;
     }
     .navbar-horizontal li:first-child {
@@ -100,19 +102,48 @@
         color: #333;
         cursor: pointer;
     }
+
+    .block {
+        height: 40px;
+    }
+
+    @media (max-width: 768px) {
+        .profile-list {
+            height: auto;
+            margin: 10px 0px 0px 0px;
+        }
+        .profile-list:hover .profile-content {
+            animation: none;
+        }
+        .navbar-collapse-horizonta {
+            top: 50px;
+            height: 40px;
+            display: block;
+        }
+        .navbar-collapse-horizonta li {
+            display: inline-block;
+        }
+        .navbar-collapse-horizonta li.show {
+            display: inline-block !important;
+        }
+        .block {
+            height: 15px;
+        }
+    }
 </style>
 
 <div class="col-xss-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
-    <div class="navbar-collapse collapse" style="position: fixed; z-index: 1; background-color: #EFF4FB; width: 100%;">
+    <div class="navbar-collapse collapse navbar-collapse-horizonta" style="position: fixed; z-index: 1; background-color: #EFF4FB; width: 100%;">
         <ul class="nav navbar-nav navbar-horizontal">
-            <li class="{{val == showType ? 'show' : ''}}" ng-repeat="(k, val) in type" ng-click="switchType(val)">
+            <li class="{{val == showType ? 'show' : ''}}" ng-repeat="(k, val) in type" ng-click="switchType(val)" style="{{(val == showType ? 'color: #548FCE':'')}} ">
                 <div class="tab-circle horizontal"></div>
                 {{val}}
                 <span class="sr-only">(current)</span>
             </li>
         </ul>
     </div>
-    <div class="col-xss-12 col-xs-12 col-sm-12 col-md-12 col-lg-12" style="height: 40px;"></div>
+    <div class="block col-xss-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    </div>
     <div ng-repeat="(k, val) in profile | toArray" ng-if="val['type'] == showType || showType == '全部'" class="profile-list col-xss-12 col-xs-6 col-sm-4 col-md-3 col-lg-3" style="text-align: center">
         <a href="profile_content/{{val.key}}" style="text-decoration:none;">
             <div class="profile-content">

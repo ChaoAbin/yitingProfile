@@ -55,16 +55,24 @@
         width: 197px;
         display: inline-block;
     }
+
+    @media (max-width: 768px) {
+        .contact-background {
+            display: none;
+        }
+        .contact-content > div {
+            margin-bottom: 0px !important;
+        }
+    }
 </style>
 
 
-<div class="contact-content col-xss-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
-    <img class="contact-background" src="img/icon/contact-background.png">
+<div class="contact-content col-xss-12 col-xs-12 col-sm-12 col-md-12 col-lg-12" style="background: url('img/icon/contact-background.png'); background-position: 50% 0%; background-repeat: no-repeat;">
     <div style="position: relative; display: inline-block; width: 335px; height: 690px; margin-bottom: 100px; color: #548FCE;">
         <img class="iphone7" src="img/icon/white-iphone-2.png" style="width: 100%; position: absolute; top: 0px; left: 0px;">
         <div style="position: absolute; left: 32px; top: 75px; width: 279px;">
             <div style="position: relative;">
-                <img class="img-responsive about-head" src="img/contact-head.png" style="width: 100%;">
+                <img class="img-responsive about-head" src="img/contact-head.jpg" style="width: 100%;">
                 <div class="name-block" style="background: gray;opacity: 0.6;"></div>
                 <div class="name-block" style="color: white; text-align: left; padding-left: 10px; padding-top: 10px;">
                     <p style="line-height: 26pt;font-size: 32pt;">Michelle</p>

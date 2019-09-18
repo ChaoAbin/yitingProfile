@@ -4,7 +4,7 @@ $.data_profile= [
     ,"tpl": "website"
     ,"title": "雲端作業系統-Web"
     ,"subTitle": "2018第二次網頁改版"
-    ,"description": ""
+    ,"description": "主要的改版樣式設計出來後參與其他功能的細節設計"
     ,"responsible": "UI/UX設計"
     ,"company": "協作雲端科技有限公司"
     ,"tool": "Sketch"
@@ -61,8 +61,8 @@ $.data_profile= [
     "type": "UI/UX"
     ,"tpl": "website"
     ,"title": "雲端作業系統-APP"
-    ,"subTitle": "2018第二次改版執行-建立CoSpace"
-    ,"description": "建立CoSpace的流程修改並增加建立時可以邀請要加入的聯絡人"
+    ,"subTitle": "2018第二次改版執行-CoSpace"
+    ,"description": "CoSpace框架設計，與舊版的修改幅度比較大，所以在工程執行方面更有挑戰性"
     ,"responsible": "UI/UX設計"
     ,"company": "協作雲端科技有限公司"
     ,"tool": "Sketch"
@@ -200,7 +200,7 @@ $.data_profile= [
             ,"desc": ""
         }
     ]
-    ,"joinTime": "2018"
+    ,"joinTime": ""
 },{
     "type": "UI/UX"
     ,"tpl": "website"
@@ -255,7 +255,7 @@ $.data_profile= [
             ,"desc": ""
         }
     ]
-    ,"joinTime": "2018"
+    ,"joinTime": "2019"
 },{
     "type": "UI/UX"
     ,"tpl": "website"

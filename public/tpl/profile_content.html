@@ -25,7 +25,7 @@
     }
     .photoInView {
         position: relative;
-        width: auto;
+        width: 100%;
         max-width: 800px;
     }
     .infoMobile, .infoPC {
@@ -49,6 +49,16 @@
     }
     .mobile-content-sec {
         margin: 10px 0px;
+    }
+    @media (max-width: 480px) {
+        .col-xss-offset-0 {
+            margin-left: 0%;
+        }
+    }
+    @media (max-width: 768px) {
+        .slider-arrow-left, .slider-arrow-right {
+            display: none;
+        }
     }
     @media (min-width: 767px) {
         .infoPC {
@@ -100,6 +110,8 @@
 
     .go-top {
         position: fixed;
+        width: 50px;
+        height: 50px;
         right: 20px;
         bottom: 20px;
         color: #5076AF;
@@ -109,7 +121,9 @@
         padding: 10px;
         border: 1px solid;
         border-radius: 100%;
-        background: #fff;
+        background: #F7FAFF;
+        border-color: transparent;
+        cursor: pointer;
     }
 
     .movie {
@@ -145,10 +159,10 @@
     }
 </style>
 
-<div ng-include="'tpl/profile_detail.html'" class="col-xss-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<div ng-include="'tpl/profile_detail.html'" class="col-xss-12 col-xss-offset-0 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 col-lg-12 col-lg-offset-0">
 </div>
 
-<div class="col-xss-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<div class="col-xss-12 col-xss-offset-0 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 col-lg-11 col-lg-offset-1" ng-swipe-left="swipeLeft()" ng-swipe-right="swipeRight()">
     <div ng-if="profile.movie" ng-bind-html="thisCanBeusedInsideNgBindHtml(profile.movie)" class="movie"></div>
     <div ng-if="profile.tpl == 'website'" ng-repeat="val in profile.image" style="margin-bottom: 20px; text-align: center;">
         <p ng-if="val.desc" style="color: #5076AF;"><span>{{($index+1) + ". "}}</span>{{val.desc}}</p>

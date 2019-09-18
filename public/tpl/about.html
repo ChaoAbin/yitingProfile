@@ -80,7 +80,6 @@
     @media (min-width: 1200px) {
     } */
 
-
     .heand {
         position: relative;
         color: #548FCE;
@@ -146,13 +145,50 @@
         font-weight: bold;
     }
     .description .work-list {
-        font-family: PingFangTC-Regular;
+        font-family: "PingFangTC-Regular";
         font-size: 16px;
         color: #81A5CC;
         text-align: justify;
     }
+    .show-in-mobile {
+        display: none;
+    }
+
+    @media (max-width: 768px) {
+	    .timeline {
+            left: 0px;
+        }
+        .name-block {
+            left: 0px;
+        }
+        .show-in-pc {
+            display: none;
+        }
+        .show-in-mobile {
+            display: block;
+        }
+        .show-in-mobile > div {
+            margin-top: 0px !important;
+        }
+    }
 </style>
 	<div class="about-block">
+        <div class="show-in-mobile col-xss-12 col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <div style="color: #548FCE; position: relative; margin-top: 70px;">
+                <p id="title" style="font-weight: bold; font-size: 15pt; margin-bottom: 20px; ">UX/UI 設計師，專長平面設計、CIS設計、UX/UI設計</p>
+                <p>Hi, I'm Michelle</p>
+                <br>
+                <p>擅長平面設計、CIS設計、UX/UI設計，樂於與不同領域的專業人士溝通與合作嘗試不同的可能性，並且用心專注於細節讓團隊合作效率提升，以全面的思維解決問題，具備從產品策略至設計實踐的專業與視野。</p>
+
+                <p style="margin: 18px 0px 18px 0px;">擅長工具</p>
+                <div>Sketch | Adobe XD | Illustrator | Photoshop</div>
+                <div class="phone-pc-block">
+                    <img style="margin-left: 10px;" src="img/icon/icon_phone.png">
+                    <img style="margin-left: 10px;" src="img/icon/icon_pc.png">
+                </div>
+            </div>
+        </div>
+
 	    <div class="col-xss-12 col-xs-12 col-sm-12 col-md-6 col-lg-6">
             <div class="heand">
                 <img class="img-responsive my-photo" src="img/my-michelle.png">
@@ -182,7 +218,7 @@
             </ul>
 	    </div>
 
-	    <div class="col-xss-12 col-xs-12 col-sm-12 col-md-6 col-lg-6">
+	    <div class="show-in-pc col-xss-12 col-xs-12 col-sm-12 col-md-6 col-lg-6">
 	        <div style="color: #548FCE; position: relative; margin-top: 70px;">
 	            <p id="title" style="font-weight: bold; font-size: 15pt; margin-bottom: 20px; ">UX/UI 設計師，專長平面設計、CIS設計、UX/UI設計</p>
                 <p>Hi, I'm Michelle</p>
