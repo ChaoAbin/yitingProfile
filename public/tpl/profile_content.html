@@ -122,25 +122,26 @@
 
     .slider-arrow-left, .slider-arrow-right {
         position: fixed;
-        width: 75px;
-        height: 75px;
+        width: 40px;
+        height: 40px;
         top: 0px;
         bottom: 0px;
         margin: auto;
-        opacity: 0.1;
+        opacity: 0.4;
+        cursor: pointer;
     }
 
     .slider-arrow-right {
         right: 50px;
-        transform: rotate(180deg);
     }
 
     .slider-arrow-left {
         left: 50px;
+        transform: rotate(180deg);
     }
 
     .slider-arrow-left:hover, .slider-arrow-right:hover {
-        opacity: 0.7;
+        opacity: 1;
     }
 </style>
 
@@ -179,5 +180,5 @@
 </div>
 
 <div id="goTop" ng-click="screenTop()" class="go-top">Top</div>
-<img ng-if="pageSwitch.index != 0" class="slider-arrow-left" src="/img/icon/photoBarArrow.png" ng-click="pageSwitch.back()">
-<img ng-if="!pageSwitch.isEnd()" class="slider-arrow-right" src="/img/icon/photoBarArrow.png" ng-click="pageSwitch.forward()">
+<img ng-if="pageSwitch.index != 0" class="slider-arrow-left" src="/img/icon/photoArrow.png" ng-click="pageSwitch.back()">
+<img ng-if="!pageSwitch.isEnd()" class="slider-arrow-right" src="/img/icon/photoArrow.png" ng-click="pageSwitch.forward()">
