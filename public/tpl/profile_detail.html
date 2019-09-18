@@ -2,17 +2,21 @@
     p {
         margin-bottom: 5px;
     }
+    .icon-list img {
+        margin-left: 10px;
+        margin-bottom: 5px;
+    }
+    .icon-list img:first-child {
+        margin-left: 0px;
+    }
 </style>
 <div style="color: #5076AF; padding-top: 10px;">
     <div style="text-align: right; cursor: pointer;">
         <img src="img/icon/btn_close.png" ng-click="pageBack()">
     </div>
-    <img src="" style="width: 20px;">
-    <div ng-if="profile.icon.indexOf('pc') != -1" style="margin-bottom: 10px;">
-        <img src="img/icon/icon_pc.png">
-    </div>
-    <div ng-if="profile.icon.indexOf('mobile') != -1" >
-        <img src="img/icon/icon_phone.png" style="margin-bottom: 10px;">
+    <div class="icon-list">
+        <img ng-if="profile.icon.indexOf('pc') != -1" src="img/icon/icon_pc.png">
+        <img ng-if="profile.icon.indexOf('mobile') != -1" src="img/icon/icon_phone.png">
     </div>
     <div style="border-top: 1px #4B79BD dotted;"></div>
     <p style="font-size: 18pt; font-weight: bold; margin: 20px 0px 0px 0px;">{{profile.title}}</p>
