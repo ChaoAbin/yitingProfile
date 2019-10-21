@@ -135,10 +135,12 @@
 <div class="col-xss-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
     <div class="navbar-collapse collapse navbar-collapse-horizonta" style="position: fixed; z-index: 1; background-color: #EFF4FB; width: 100%;">
         <ul class="nav navbar-nav navbar-horizontal">
-            <li class="{{val == showType ? 'show' : ''}}" ng-repeat="(k, val) in type" ng-click="switchType(val)" style="{{(val == showType ? 'color: #548FCE':'')}} ">
-                <div class="tab-circle horizontal"></div>
-                {{val}}
-                <span class="sr-only">(current)</span>
+            <li class="{{val == showType ? 'show' : ''}}" ng-repeat="(k, val) in type" style="{{(val == showType ? 'color: #548FCE':'')}} ">
+                <a href="./profile#{{val}}">
+                    <div class="tab-circle horizontal"></div>
+                    {{val}}
+                    <span class="sr-only">(current)</span>
+                </a>
             </li>
         </ul>
     </div>

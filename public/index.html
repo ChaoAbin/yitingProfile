@@ -306,8 +306,8 @@
                 $scope.history = history;
             }
         ]);
-        app.controller("profile", ['$scope', '$sce', 'profileData'
-            , function ($scope, $sce, profileData ) {
+        app.controller("profile", ['$scope', '$location', '$sce', 'profileData'
+            , function ($scope, $location, $sce, profileData ) {
               window.scrollTo(0, 0);
               $('.navbar-collapse').collapse('hide');
               var profile = profileData.getAll();
@@ -332,11 +332,7 @@
                       }, 700
                   );
               };
-              $scope.showType = "全部";
-              $scope.switchType = function(showType) {
-                window.scrollTo(0, 0);
-                $scope.showType = showType;
-              }
+              $scope.showType = $location.hash() || "全部";
               $scope.swipeLeft = function() {
                 alert('swipeLeft');
               }
@@ -359,7 +355,11 @@
                   );
               };
               $scope.pageBack = function() {
-                window.location.href = window.location.origin + "/profile";
+                if(window.history.length === 2) {
+                  window.location.href = window.location.origin + "/profile";
+                } else {
+                  window.history.back();
+                }
               };
               $scope.thisCanBeusedInsideNgBindHtml = function(someHtmlVar) {
                 return $sce.trustAsHtml(someHtmlVar);
