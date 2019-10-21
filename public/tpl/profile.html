@@ -48,6 +48,12 @@
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
     }
+    .nav > li > a.profile-type-link:hover {
+        background-color: transparent;
+    }
+    .nav > li > a.profile-type-link {
+        padding: 0px;
+    }
 
     @keyframes mouseOverProfile {
         0%{
@@ -83,7 +89,7 @@
     .tab-circle.horizontal {
         display: inline-block;
         margin-bottom: 0px;
-        top: 4px;
+        top: 2px;
         margin-right: 2px;
     }
 
@@ -136,7 +142,7 @@
     <div class="navbar-collapse collapse navbar-collapse-horizonta" style="position: fixed; z-index: 1; background-color: #EFF4FB; width: 100%;">
         <ul class="nav navbar-nav navbar-horizontal">
             <li class="{{val == showType ? 'show' : ''}}" ng-repeat="(k, val) in type" style="{{(val == showType ? 'color: #548FCE':'')}} ">
-                <a href="./profile#{{val}}">
+                <a class="profile-type-link" href="./profile#{{val}}">
                     <div class="tab-circle horizontal"></div>
                     {{val}}
                     <span class="sr-only">(current)</span>
