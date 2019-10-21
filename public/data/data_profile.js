@@ -72,6 +72,7 @@ $.data_profile= [
         {
             "img": "/img/picowork/app-sec-update-create-cospace.png"
             ,"desc": ""
+            ,"url": "./sketch/app-sec-update-create-cospace/index.html"
         }
     ]
     ,"joinTime": "2018"

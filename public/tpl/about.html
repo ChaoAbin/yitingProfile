@@ -125,7 +125,7 @@
     .timeline .thread {
         position: absolute;
         width: 1px;
-        height: calc(100% - 200px);
+        height: calc(100% - 170px);
         background-color: #548FCE;
         padding-left: 0px;
         left: -1px;
@@ -205,13 +205,18 @@
                     <div class="circle"></div>
                     <div class="description">
                         <h5>
-                            <span class="company">{{val.company}}</span>
-                            <span class="title">{{val.title}}</span>
-                            <br>
-                            <span class="time">{{val.time}}</span>
+                            <div>
+                                <span class="company">{{val.company}}</span>
+                                <span class="title">{{val.title}}</span>
+                            </div>
+                            <div class="time" style="margin-top: 10px;">{{val.time}}</div>
                         </h5>
-                        <ul ng-repeat="(key2, val2) in val.description" class="work-list">
+                        <ul ng-repeat="(key2, val2) in val.jobTitle" class="work-list">
                             <li>{{val2}}</li>
+                        </ul>
+                        <br>
+                        <ul class="work-list" style="color: #548FCE">
+                            <li>{{val.desc}}</li>
                         </ul>
                     </div>
                 </li>

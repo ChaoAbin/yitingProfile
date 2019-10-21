@@ -166,7 +166,10 @@
     <div ng-if="profile.movie" ng-bind-html="thisCanBeusedInsideNgBindHtml(profile.movie)" class="movie"></div>
     <div ng-if="profile.tpl == 'website'" ng-repeat="val in profile.image" style="margin-bottom: 20px; text-align: center;">
         <p ng-if="val.desc" style="color: #5076AF;"><span>{{($index+1) + ". "}}</span>{{val.desc}}</p>
-        <img class="photoInView" ng-src="{{val.img}}">
+        <a ng-if="val.url" href="{{val.url}}" target="_blank">
+            <img class="photoInView" ng-src="{{val.img}}">
+        </a>
+        <img ng-else class="photoInView" ng-src="{{val.img}}">
     </div>
     <!-- <div class="img-block" ng-if="profile.tpl.indexOf('app') != -1" ng-repeat="val in profile.image" style="margin-bottom: 20px;">
         <div ng-if="$index == 0" >
