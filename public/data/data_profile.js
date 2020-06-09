@@ -1,6 +1,137 @@
 $.data_profile= [
 {
     "type": "UI/UX"
+    ,"tpl": "app"
+    ,"title": "京安身份核驗"
+    ,"subTitle": "logo及整體規劃"
+    ,"description": "提案兩版的風格，將最終決定好的UI及APP Logo做完整的規劃及設計，接著切圖及標註尺寸提供給工程師執行"
+    ,"responsible": "Logo＆UI/UX設計"
+    ,"company": "隨你科技有限公司"
+    ,"tool": "Sketch"
+    ,"cover": "/img/jp/id-verification.png"
+    ,"icon": ["mobile"]
+    ,"image": [
+        {
+            "img": "/img/jp/id-verification-home-page.png"
+            ,"desc": ""
+        }
+    ]
+    ,"joinTime": "2020"
+},{
+    "type": "UI/UX"
+    ,"tpl": "app"
+    ,"title": "JP播放器"
+    ,"subTitle": "主頁規劃"
+    ,"description": "將PM規劃的第一版主頁內容流程討論後，設計第一版的設計供執行長確認風格及配色，接著切圖及標註尺寸提供給工程師執行"
+    ,"responsible": "UI/UX設計"
+    ,"company": "隨你科技有限公司"
+    ,"tool": "Sketch"
+    ,"cover": "/img/jp/jp-player-home-page-cover.png"
+    ,"icon": ["mobile"]
+    ,"image": [
+        {
+            "img": "/img/jp/jp-player-home-page.png"
+            ,"desc": ""
+        }
+    ]
+    ,"joinTime": "2020"
+},{
+    "type": "UI/UX"
+    ,"tpl": "app"
+    ,"title": "JP播放器用戶中心"
+    ,"subTitle": "重新規劃用戶中心流程"
+    ,"description": "參與規劃用戶中心流程與內容，提出流程與主管溝通後確認沒問題接著設計UI"
+    ,"responsible": "UI/UX設計"
+    ,"company": "隨你科技有限公司"
+    ,"tool": "Sketch/Figma"
+    ,"cover": "/img/jp/account-mangaer-center-cover.png"
+    ,"icon": ["mobile"]
+    ,"image": [
+        {
+            "img": "/img/jp/account-mangaer-center.png"
+            ,"desc": ""
+        }
+    ]
+
+    ,"joinTime": "2020"
+},{
+    "type": "UI/UX"
+    ,"tpl": "app"
+    ,"title": "JP播放器會員"
+    ,"subTitle": "VIP提前看片流程"
+    ,"description": "參與規劃會員以及VIP提前看片流程，並設計UI"
+    ,"responsible": "UI/UX設計"
+    ,"company": "隨你科技有限公司"
+    ,"tool": "Sketch/Figma"
+    ,"cover": "/img/jp/jp-vip-first-look-cover.png"
+    ,"icon": ["mobile"]
+    ,"image": [
+        {
+            "img": "/img/jp/jp-vip-first-look.png"
+            ,"desc": ""
+        }
+    ]
+    ,"joinTime": "2020"
+},{
+    "type": "UI/UX"
+    ,"tpl": "app"
+    ,"title": "JP播放器啟動頁"
+    ,"subTitle": "啟動頁提案"
+    ,"description": "設計打開JP播放器時的歡迎啟動頁，設計3款樣式提案"
+    ,"responsible": "UI設計"
+    ,"company": "隨你科技有限公司"
+    ,"tool": "Sketch"
+    ,"cover": "/img/jp/jp-loaging-page-cover.png"
+    ,"icon": ["mobile"]
+    ,"image": [
+        {
+            "img": "/img/jp/jp-loaging-page.png"
+            ,"desc": ""
+        }
+    ]
+    ,"joinTime": "2020"
+},{
+    "type": "UI/UX"
+    ,"tpl": "website"
+    ,"title": "JP播放器下載頁"
+    ,"subTitle": "供使用者下載app的網頁"
+    ,"description": "設計規劃下載頁RWD的UI及內容的規劃"
+    ,"responsible": "UI/UX設計"
+    ,"company": "隨你科技有限公司"
+    ,"tool": "Sketch/Figma"
+    ,"cover": "/img/jp/jp-download-page-cover.png"
+    ,"icon": ["mobile"]
+    ,"image": [
+        {
+            "img": "/img/jp/jp-download-page-1.png"
+            ,"desc": ""
+        },
+        {
+            "img": "/img/jp/jp-download-page-2.png"
+            ,"desc": ""
+        }
+    ]
+    ,"joinTime": "2019"
+},{
+    "type": "UI/UX"
+    ,"tpl": "website"
+    ,"title": "雲端作業系統-Desktop app"
+    ,"subTitle": "2018改版提案"
+    ,"description": "提案改版的樣式跟模擬，先設計規劃個人桌面、Cospace桌面及聊天室的部分"
+    ,"responsible": "UI/UX設計"
+    ,"company": "協作雲端科技有限公司"
+    ,"tool": "Sketch"
+    ,"cover": "/img/picowork/picowork-web-desktop-cover.png"
+    ,"icon": ["pc"]
+    ,"image": [
+        {
+            "img": "/img/picowork/picowork-web-desktop.png"
+            ,"desc": ""
+        }
+    ]
+    ,"joinTime": "2018"
+},{
+    "type": "UI/UX"
     ,"tpl": "website"
     ,"title": "雲端作業系統-Web"
     ,"subTitle": "2018第二次網頁改版"

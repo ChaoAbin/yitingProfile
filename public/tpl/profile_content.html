@@ -65,7 +65,7 @@
             display: block;
         }
         body {
-            overflow-y: scroll; 
+            overflow-y: scroll;
         }
         .go-top {
             right: 50px;
@@ -164,7 +164,7 @@
 
 <div class="col-xss-12 col-xss-offset-0 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 col-lg-11 col-lg-offset-1" ng-swipe-left="swipeLeft()" ng-swipe-right="swipeRight()">
     <div ng-if="profile.movie" ng-bind-html="thisCanBeusedInsideNgBindHtml(profile.movie)" class="movie"></div>
-    <div ng-if="profile.tpl == 'website' || profile.tpl == 'app/web'" ng-repeat="val in profile.image" style="margin-bottom: 20px; text-align: center;">
+    <div ng-if="profile.tpl == 'website' || profile.tpl == 'app/web' || profile.tpl == 'app'" ng-repeat="val in profile.image" style="margin-bottom: 20px; text-align: center;">
         <p ng-if="val.desc" style="color: #5076AF;"><span>{{($index+1) + ". "}}</span>{{val.desc}}</p>
         <a ng-if="val.url" href="{{val.url}}" target="_blank">
             <img class="photoInView" ng-src="{{val.img}}">
