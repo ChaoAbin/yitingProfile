@@ -2,24 +2,6 @@ $.data_profile= [
 {
     "type": "UI/UX"
     ,"tpl": "app"
-    ,"title": "京安身份核驗"
-    ,"subTitle": "logo及整體規劃"
-    ,"description": "提案兩版的風格，將最終決定好的UI及APP Logo做完整的規劃及設計，接著切圖及標註尺寸提供給工程師執行"
-    ,"responsible": "Logo＆UI/UX設計"
-    ,"company": "隨你科技有限公司"
-    ,"tool": "Sketch"
-    ,"cover": "/img/jp/id-verification.png"
-    ,"icon": ["mobile"]
-    ,"image": [
-        {
-            "img": "/img/jp/id-verification-home-page.png"
-            ,"desc": ""
-        }
-    ]
-    ,"joinTime": "2020"
-},{
-    "type": "UI/UX"
-    ,"tpl": "app"
     ,"title": "JP播放器"
     ,"subTitle": "主頁規劃"
     ,"description": "將PM規劃的第一版主頁內容流程討論後，設計第一版的設計供執行長確認風格及配色，接著切圖及標註尺寸提供給工程師執行"
@@ -112,6 +94,24 @@ $.data_profile= [
         }
     ]
     ,"joinTime": "2019"
+},{
+    "type": "UI/UX"
+    ,"tpl": "app"
+    ,"title": "京安身份核驗"
+    ,"subTitle": "logo及整體規劃"
+    ,"description": "提案兩版的風格，將最終決定好的UI及APP Logo做完整的規劃及設計，接著切圖及標註尺寸提供給工程師執行"
+    ,"responsible": "Logo＆UI/UX設計"
+    ,"company": "隨你科技有限公司"
+    ,"tool": "Sketch"
+    ,"cover": "/img/jp/id-verification.png"
+    ,"icon": ["mobile"]
+    ,"image": [
+        {
+            "img": "/img/jp/id-verification-home-page.png"
+            ,"desc": ""
+        }
+    ]
+    ,"joinTime": "2020"
 },{
     "type": "UI/UX"
     ,"tpl": "website"
