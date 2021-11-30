@@ -1,5 +1,23 @@
 $.data_profile= [
 {
+    "type": "平面設計"
+    ,"tpl": "app"
+    ,"title": "LINE＠"
+    ,"subTitle": "圖文表單設計"
+    ,"description": "好的圖文選單設計，除了可以引導使用者認識服務，操作上不迷航，還能增加商家與使用者互動的機會與情感，提供更好的服務體驗，並能快速知道商家想傳達的資訊與特色"
+    ,"responsible": "圖文表單設計"
+    ,"company": "老虎網路科技有限公司"
+    ,"tool": "Figma"
+    ,"cover": "/img/tiger/lineAt-cover.png"
+    ,"icon": ["mobile"]
+    ,"image": [
+        {
+            "img": "/img/tiger/lineAt.png"
+            ,"desc": ""
+        }
+    ]
+    ,"joinTime": "2021"
+},{
     "type": "UI/UX"
     ,"tpl": "app"
     ,"title": "JP播放器"
