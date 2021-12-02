@@ -266,6 +266,31 @@
             profileData = $.data_profile;
 
             function getAll() {
+                // 排序 1.UI/UX 2.平面設計 3.廣告設計
+                profileData = profileData.sort((a, b) => {
+                    function getVal(type) {
+                        switch(type) {
+                            case 'UI/UX':
+                                return 2
+                            break
+                            case '平面設計':
+                                return 1
+                            break
+                            default:
+                                return 0
+                        }
+                    }
+                    a = getVal(a.type)
+                    b = getVal(b.type)
+
+                    if (a > b) {
+                        return -1
+                    } else if (a < b) {
+                        return 1
+                    } else {
+                        return 0
+                    }
+                })
                 return profileData;
             }
             function getByIndex(index) {

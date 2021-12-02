@@ -2,6 +2,25 @@ $.data_profile= [
 {
     "type": "平面設計"
     ,"tpl": "app"
+    ,"title": "17FIT"
+    ,"subTitle": "針對健身類別產品ＤＭ"
+    ,"description": "17FIT 時常舉辦說明會，舊版的ＤＭ內容已經不符合現在產品的特色，所以針對健身相關產業需要重新設計一款，能夠吸引場館以及運動中心閱覽進而想要深入了解產品，選用兩折ＤＭ則可減少空間占量，攜帶便利性大大提高。"
+    ,"responsible": "插畫與編排"
+    ,"company": "老虎網路科技有限公司"
+    ,"tool": "Illustrator"
+    ,"cover": "/img/tiger/product-dm-cover.png"
+    ,"icon": ""
+    ,"image": [
+        {
+            "img": "/img/tiger/product-dm-1.png"
+            ,"desc": ""
+        }
+    ]
+    ,"joinTime": "2021"
+},
+{
+    "type": "平面設計"
+    ,"tpl": "app"
     ,"title": "LINE＠"
     ,"subTitle": "圖文表單設計"
     ,"description": "好的圖文選單設計，除了可以引導使用者認識服務，操作上不迷航，還能增加商家與使用者互動的機會與情感，提供更好的服務體驗，並能快速知道商家想傳達的資訊與特色"
