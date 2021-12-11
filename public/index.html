@@ -201,6 +201,10 @@
                 templateUrl : "tpl/profile_content.html",
                 controller : "profile_content"
             })
+            .when("/profile_content_customized_1/:index", {
+                templateUrl : "tpl/profile_detail_customized_1.html",
+                controller : "profile_content_customized_1"
+            })
             .when("/contact", {
                 templateUrl : "tpl/contact.html",
                 controller : "contact"
@@ -359,7 +363,7 @@
               };
               $scope.showType = $location.hash() || "全部";
               $scope.swipeLeft = function() {
-                alert('swipeLeft');
+                // alert('swipeLeft');
               }
             }
         ]);
@@ -403,12 +407,51 @@
               }
             }
         ]);
+        app.controller("profile_content_customized_1", ['$scope', '$routeParams', '$sce', 'profileData'
+            , function ($scope, $routeParams, $sce, profileData ) {
+              window.scrollTo(0, 0);
+              $('.navbar-collapse').collapse('hide');
+            //   //預設顯示第一張圖
+            //   $scope.showId = 0;
+              $scope.profile = profileData.getByIndex($routeParams.index);
+            //   $scope.showPhoto = function(index) {
+            //       $scope.showId = index;
+            //   }
+              $scope.screenTop = function() {
+                  $('body,html').animate({
+                      scrollTop: 0 ,
+                      }, 700
+                  );
+              };
+              $scope.pageBack = function() {
+                if(window.history.length === 2) {
+                  window.location.href = window.location.origin + "/profile";
+                } else {
+                  window.history.back();
+                }
+              };
+              $scope.thisCanBeusedInsideNgBindHtml = function(someHtmlVar) {
+                return $sce.trustAsHtml(someHtmlVar);
+              };
+            //   $scope.pageSwitch = {
+            //     back: function() {
+            //         window.location.href = window.location.href.substr(0, window.location.href.lastIndexOf("/")) + "/" +(this.index - 1);
+            //     },
+            //     forward: function() {
+            //         window.location.href = window.location.href.substr(0, window.location.href.lastIndexOf("/")) + "/" + (this.index + 1);
+            //     },
+            //     isEnd: function() {
+            //       return ((profileData.getAll().length - 1) == parseInt($routeParams.index))
+            //     },
+            //     index: parseInt($routeParams.index)
+            //   }
+            }
+        ]);
         app.controller("contact", function ($scope) {
             window.scrollTo(0, 0);
             $('.navbar-collapse').collapse('hide');
             $scope.msg = "I love Paris";
         });
-
         app.directive("scroll", function ($window) {
             return function(scope, element, attrs) {
                 angular.element($window).bind("scroll", function() {
@@ -494,10 +537,10 @@
     </div>
 
 
-    <div class="all-rights-reserved">
+    <!--div class="all-rights-reserved">
         <p style="margin: 0px;">MICHELLE WORKS</p>
         <p style="margin: 0px;">ALL RIGHTS RESERVED.</p>
-    </div>
+    </div-->
 </body>
 </html>
 

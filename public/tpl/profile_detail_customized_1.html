@@ -1,0 +1,325 @@
+<style>
+    .content {
+        font-family: "Open Sans", sans-serif;
+        font-style: normal;
+        letter-spacing: 1px;
+        max-width: 1160px;
+    }
+    p {
+        margin-bottom: 5px;
+    }
+    .icon-list img {
+        margin-left: 10px;
+        margin-bottom: 5px;
+    }
+    .icon-list img:first-child {
+        margin-left: 0px;
+    }
+
+    .go-top {
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        right: 20px;
+        bottom: 20px;
+        color: #5076AF;
+        font-size: 14pt;
+
+        display: none;
+        padding: 10px;
+        border: 1px solid;
+        border-radius: 100%;
+        background: #F7FAFF;
+        border-color: transparent;
+        cursor: pointer;
+    }
+    @media (min-width: 767px) {
+        body {
+            overflow-y: scroll;
+        }
+        .go-top {
+            right: 50px;
+            bottom: 50px;
+        }
+    }
+
+    /* 區塊 */
+    .block, .block img, .dot-line  {
+        position: relative;
+        width: 100%;
+    }
+    .dot-line {
+        border-top: 2px #4B79BD dotted;
+    }
+    /* header start */
+    header .text-block {
+        color: #3E66A2;
+        position: absolute;
+        top: 18.75%;
+        left: 3%;
+        width: 38.76%;
+        height: 80%;
+    }
+    header h1 {
+        color: #2B7BD1;
+        font-size: 28px;
+        line-height: 36px;
+        margin: 0px;
+        font-weight: 500;
+    }
+    header .desc {
+        margin: 7.2% 0 0 0;
+        font-size: 16px;
+        line-height: 27px;
+    }
+    header li {
+        position: absolute;
+        left: 0px;
+        bottom: 10%;
+        list-style-type: none;
+        color: #5076AF;
+    }
+    header ul {
+        padding: 0px;
+        font-size: 14px;
+        margin: 0px;
+    }
+    /* header end */
+
+    .chapter {
+        margin: 0px 7.7% 35px 7.7%;
+        text-align: center;
+        color: #3E66A1;
+    }
+    .chapter p {
+        font-size: 20px;
+        line-height: 36px;
+    }
+    .chapter h2 {
+        color: #2B7BD1;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 30px;
+        margin-top: 130px;
+        margin-bottom: 30px;
+    }
+
+    .chapter .pointer-block {
+        position: relative;
+        margin-top: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 160px;
+    }
+    .chapter .pointer-block h2 {
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+    .chapter .pointer {
+        position: relative;
+        padding-top: 35px;
+        flex: 1;
+        width: 34.5%;
+        height: 100%;
+        max-width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .chapter .pointer .number {
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 35px;
+        text-align: center;
+    }
+    .chapter .pointer-block p, .chapter .pointer-block img {
+        display: flex;
+    }
+    .chapter .pointer-block img {
+        width: 100%;
+    }
+    .chapter .dash {
+        width: 145.5px;
+        height: 0px;
+        border-top: 1px solid #AAC4E9;
+        transform: rotate(107.19deg);
+    }
+    .chapter .highlight-title {
+        display: inline-block;
+        line-height: 36px;
+        font-size: 20px;
+        color: #FFFFFF;
+        background: #2B7BD1;
+        border-radius: 3px;
+        margin-top: 30px;
+        padding: 3px 6px;
+    }
+    
+    /* chapter-2 start */
+    .chapter-2 {
+        margin-bottom: 120px;
+    }
+    .chapter-2 .pointer-block.white {
+        background-color: white;
+        height: 220px;
+        padding: 61px 29px 65px 29px;
+        box-shadow: 6px 4px 14px rgba(37, 80, 142, 0.1);
+        border-radius: 12px;
+    }
+    .chapter-2 .pointer-remark {
+        position: absolute;
+        bottom: -65px;
+        width: calc(100% - 88px);
+        height: 80px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+        background: #2B7BD1;
+        box-shadow: 6px 4px 14px rgba(37, 80, 142, 0.1);
+        border-radius: 12px;
+    }
+    .chapter-2 .pointer-remark p {
+        color: white;
+    }
+    .chapter-2 .highlight-title {
+        margin-top: 100px;
+        margin-bottom: 15px;
+    }
+    .chapter-2 .triangle {
+        width: 0;
+        height: 0;
+        display: inline-block;
+        border-style: solid;
+        border-width: 10px 7px 0 7px;
+        border-color: #3e66a1 transparent transparent transparent;
+    }
+    .chapter-2 .demo-img {
+        margin: 30px 150px 0px 150px;
+        width: calc(100% - 300px);
+    }
+    /* chapter-2 end */
+</style>
+<div 
+    style="color: #5076AF; padding-top: 10px;"
+    class="content col-xss-12 col-xss-offset-0 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 col-lg-12 col-lg-offset-0">
+    <div style="text-align: right; cursor: pointer;">
+        <img src="img/icon/btn_close.png" ng-click="pageBack()" style="width: 42px; height: 42px;">
+    </div>
+    <div class="icon-list">
+        <img src="img/icon/icon_phone.png">
+    </div>
+    <header class="block">
+        <img src="img/tiger/customized_1/works_banner1.png">
+        <div class="text-block">
+            <h1>17FIT</h1>
+            <h1>品牌APP 2.0改版</h1>
+            <p class="desc">
+                品牌APP 是提供品牌加值的產品，不單使用web，把場館裝進客戶的智慧型手機裡，除了提高品牌形象，更能有效地增加客戶出席率和業績表現。
+            </p>
+            <li>
+                <ul>分類：UI/UX</ul>
+                <ul>負責項目：改版</ul>
+                <ul>製作公司：老虎網路科技有限公司</ul>
+                <ul>軟體：Figma</ul>
+            </li>
+        </div>
+    </header>
+    <article class="chapter chapter-1">
+        <h2>為什麼決定要 Redesign?</h2>
+        <p style="margin-top: 30px;">品牌APP上線多年<span style="font-weight: bold;">未曾做過全面性的整理</span>，針對不同品牌客戶樣式都是同一色系及款式，除了啟動頁的品牌LOGO外，無品牌客製化的相關樣式，較無品牌印象及歸屬感，如使用者遇到都是17FIT的品牌客戶，操作APP時會容易混淆，且 17FIT 為了<span style="font-weight: bold;">提升客戶更好的產品與操作體驗</span>，決定做品牌APP的2.0版升級設計。</p>
+        <h2>總合以上，定義了幾個大問題</h2>
+        <h3 class="highlight-title">『設計』</h3>
+        <p>久未翻新，產品已上線多年也有持續新增功能，卻沒有全面性的整理，<span style="font-weight: bold;">無訂定UI規則與文件</span></p>
+        <h3 class="highlight-title">『文字』</h3>
+        <p>經過不同 PM 與 RD 執行製作，文字內容的定義<span style="font-weight: bold;">無統一</span></p>
+        <h3 class="highlight-title">『UX 體驗』</h3>
+        <p>之前無 UI/UX設計師 參與製作，使用者體驗與操作<span style="font-weight: bold;">需改善</span></p>
+        <h2>遇到的困難</h2>
+        <p>品牌APP沒有 UI/UX 的文件可以供改版參考，所以花了一些時間釐清所有功能與操作流程，並同時將體驗上覺得操作困難及痛點的部分歸納出來與PM討論，並瞭解工程端可執行的時間，確認2.0版的設計可以變動到什麼程度。</p>
+        <h2>品牌APP2.0的重點調整</h2>
+        <div class="pointer-block">
+            <div class="pointer">
+                <div class="number">
+                    <h2>1.</h2>
+                </div>
+                <p>UI 全面新的設計，內容呈現優化及風格的翻新，增加品牌客製化的設計，增加客戶購買此服務的意願</p>
+            </div>
+            <div class="dash"></div>
+            <div class="pointer">
+                <div class="number">
+                    <h2>2.</h2>
+                </div>
+                <p>依照工程排程與評估做 UX 的調整</p>
+            </div>
+        </div>
+    </article>
+    <div class="dot-line"></div>
+    <article class="chapter chapter-2">
+        <h2>UI 優化</h2>
+        <div style="max-width: 860px; margin: auto;">
+        <div class="pointer-block white">
+            <div class="pointer">
+                <div class="number">
+                    <h2> 客戶族群 . </h2>
+                </div>
+                <p>運動健身與美容沙龍業者</p>
+            </div>
+            <div class="dash"></div>
+            <div class="pointer">
+                <div class="number">
+                    <h2> 使用者族群 . </h2>
+                </div>
+                <p>20~50歲左右男女</p>
+            </div>
+            <div class="pointer-remark">
+                <p>風格：簡約時尚，圓潤與線條感搭配，凸顯介面層次與區塊感</p>
+            </div>
+        </div>
+        </div>
+        <h3 class="highlight-title" style="margin-top: 150px;">『啟動頁』</h3>
+        <p>品牌色半透明底，後面可放置品牌形象照片，可豐富品牌形象</p>
+        <div class="pointer-block" style="height: auto;">
+            <div class="pointer" style="justify-content: start;">
+                <div>
+                    <h2 style="font-size: 14px; color: #3e66a1;">
+                        <div class="triangle"></div>
+                        舊版
+                    </h2>
+                    <img src="img/tiger/customized_1/p_1.png" style="max-width: 225px;">
+                </div>
+            </div>
+            <div class="pointer" style="justify-content: end;">
+                <div>
+                    <h2 style="font-size: 14px; color: #3e66a1;">
+                        <div class="triangle"></div>
+                        新版
+                    </h2>
+                    <img src="img/tiger/customized_1/p_2.png" style="max-width: 410px;">
+                </div>
+            </div>
+        </div>
+
+        <h3 class="highlight-title">『品牌形象色』</h3>
+        <p>可調整的形象色的設定，避免過多的顏色設定，先採取單色的調整，預計之後會推出深色模式的介面</p>
+        <img class="demo-img" src="img/tiger/customized_1/p_3.png">
+
+        <h3 class="highlight-title">『狀態的定義與樣式』</h3>
+        <img class="demo-img" src="img/tiger/customized_1/p_4.png">
+
+        <h3 class="highlight-title">『文件的整理』</h3>
+        <p>之前沒有UI文件供後續人員閱覽，藉此機會整理，並與團隊討論呈方式</p>
+        <img class="demo-img" src="img/tiger/customized_1/p_6.png" style="width: 100%; margin: 30px 0px 0px 0px;">
+
+        <h3 class="highlight-title">『Prototype 製作』</h3>
+        <p>APP的操作與動態轉場呈現樣式，供討論與DEMO使用</p>
+
+    </article>
+    <!-- 至頂按鈕 -->
+    <div id="goTop" ng-click="screenTop()" class="go-top">Top</div>
+</div>

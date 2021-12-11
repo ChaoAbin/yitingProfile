@@ -1,5 +1,25 @@
 $.data_profile= [
 {
+    "type": "UI/UX"
+    ,"tpl": "customized"
+    ,"customizedLink": "profile_content_customized_1"
+    ,"title": "測試客製化"
+    ,"subTitle": "測試客製化"
+    ,"description": "測試客製化"
+    ,"responsible": "插畫與編排"
+    ,"company": "老虎網路科技有限公司"
+    ,"tool": "Illustrator"
+    ,"cover": "/img/tiger/product-dm-cover.png"
+    ,"icon": ""
+    ,"image": [
+        {
+            "img": "/img/tiger/product-dm-1.png"
+            ,"desc": ""
+        }
+    ]
+    ,"joinTime": "2021"
+},
+{
     "type": "平面設計"
     ,"tpl": "app"
     ,"title": "17FIT"
@@ -405,7 +425,7 @@ $.data_profile= [
             ,"desc": ""
         }
     ]
-    ,"movie": '<iframe width="956" height="538" src="https://www.youtube.com/embed/MznWbx42DGM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+    // ,"movie": '<iframe width="956" height="538" src="https://www.youtube.com/embed/MznWbx42DGM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
     ,"joinTime": "2018"
 },{
     "type": "平面設計"
