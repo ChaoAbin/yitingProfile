@@ -1,219 +1,9 @@
 <style>
-    #profile div.tab-circle {
-        visibility: visible;
-    }
-    #profile > a {
-        color: #548FCE;
-    }
-    .content {
-        font-family: "Open Sans", sans-serif;
-        font-style: normal;
-        letter-spacing: 1px;
-        max-width: 1160px;
-    }
-    p {
-        margin-bottom: 5px;
-    }
-    .icon-list img {
-        margin-left: 10px;
-        margin-bottom: 12px;
-    }
-    .icon-list img:first-child {
-        margin-left: 0px;
-    }
-
-    .go-top {
-        position: fixed;
-        width: 50px;
-        height: 50px;
-        right: 20px;
-        bottom: 20px;
-        color: #5076AF;
-        font-size: 14pt;
-
-        display: none;
-        padding: 10px;
-        border: 1px solid;
-        border-radius: 100%;
-        background: #F7FAFF;
-        border-color: transparent;
-        cursor: pointer;
-    }
-    @media (min-width: 767px) {
-        body {
-            overflow-y: scroll;
-        }
-        .go-top {
-            right: 50px;
-            bottom: 50px;
-        }
-    }
-
-    /* 區塊 */
-    .block, .block img, .dot-line  {
-        position: relative;
-        width: 100%;
-    }
-    .dot-line {
-        border-top: 2px #4B79BD dotted;
-    }
-    /* header start */
-    header .text-block {
-        color: #3E66A2;
-        position: absolute;
-        top: 18.75%;
-        left: 3%;
-        width: 38.76%;
-        height: 80%;
-    }
-    header h1 {
-        color: #2B7BD1;
-        font-size: 28px;
-        line-height: 36px;
-        margin: 0px;
-        font-weight: 500;
-    }
-    header .desc {
-        margin: 7.2% 0 0 0;
-        font-size: 16px;
-        line-height: 27px;
-    }
-    header li {
-        position: absolute;
-        left: 0px;
-        bottom: 10%;
-        list-style-type: none;
-        color: #5076AF;
-    }
-    header ul {
-        padding: 0px;
-        font-size: 14px;
-        margin: 0px;
-    }
-    /* header end */
-
-    .chapter {
-        margin: 0px 7.7% 35px 7.7%;
-        text-align: center;
-        color: #3E66A1;
-    }
-    .chapter p {
-        font-size: 20px;
-        line-height: 36px;
-    }
-    .chapter h2 {
-        color: #2B7BD1;
-        font-weight: 600;
-        font-size: 28px;
-        line-height: 30px;
-        margin-top: 130px;
-        margin-bottom: 30px;
-    }
-
-    .chapter .pointer-block {
-        position: relative;
-        margin-top: 90px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 160px;
-    }
-    .chapter .pointer-block h2 {
-        margin-top: 0px;
-        margin-bottom: 10px;
-    }
-
-    .chapter .pointer {
-        position: relative;
-        padding-top: 35px;
-        flex: 1;
-        width: 34.5%;
-        height: 100%;
-        max-width: 400px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .chapter .pointer .number {
-        position: absolute;
-        top: 0px;
-        width: 100%;
-        height: 35px;
-        text-align: center;
-    }
-    .chapter .pointer-block p, .chapter .pointer-block img {
-        display: flex;
-    }
-    .chapter .pointer-block img {
-        width: 100%;
-    }
-    .chapter .dash {
-        width: 145.5px;
-        height: 0px;
-        border-top: 1px solid #AAC4E9;
-        transform: rotate(107.19deg);
-    }
-    .chapter .highlight-title {
-        display: inline-block;
-        line-height: 36px;
-        font-size: 20px;
-        color: #FFFFFF;
-        background: #2B7BD1;
-        border-radius: 3px;
-        margin-top: 30px;
-        padding: 3px 6px;
-    }
-    
-    /* chapter-2 start */
-    .chapter-2 {
-        margin-bottom: 120px;
-    }
-    .chapter-2 .pointer-block.white {
-        background-color: white;
-        height: 220px;
-        padding: 61px 29px 65px 29px;
-        box-shadow: 6px 4px 14px rgba(37, 80, 142, 0.1);
-        border-radius: 12px;
-    }
-    .chapter-2 .pointer-remark {
-        position: absolute;
-        bottom: -65px;
-        width: calc(100% - 88px);
-        height: 80px;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        text-align: center;
-        background: #2B7BD1;
-        box-shadow: 6px 4px 14px rgba(37, 80, 142, 0.1);
-        border-radius: 12px;
-    }
-    .chapter-2 .pointer-remark p {
-        color: white;
-    }
-    .chapter-2 .highlight-title {
-        margin-top: 100px;
-        margin-bottom: 15px;
-    }
-    .chapter-2 .triangle {
-        width: 0;
-        height: 0;
-        display: inline-block;
-        border-style: solid;
-        border-width: 10px 7px 0 7px;
-        border-color: #3e66a1 transparent transparent transparent;
-    }
-    .chapter-2 .demo-img {
-        margin: 30px 150px 0px 150px;
-        width: calc(100% - 300px);
-    }
-    /* chapter-2 end */
+    @import "../css/customized.css";
 </style>
 <div 
     style="color: #5076AF; padding-top: 10px;"
-    class="content col-xss-12 col-xss-offset-0 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 col-lg-12 col-lg-offset-0">
+    class="content col-xss-12 col-sm-12 col-xs-12 col-md-12 col-lg-12">
     <div style="text-align: right; cursor: pointer;">
         <img src="img/icon/btn_close.png" ng-click="pageBack()" style="width: 42px; height: 42px;">
     </div>
@@ -221,20 +11,23 @@
         <img src="img/icon/icon_phone.png">
     </div>
     <header class="block">
-        <img src="img/tiger/customized_1/works_banner1.png">
         <div class="text-block">
             <h1>17FIT</h1>
             <h1>品牌APP 2.0改版</h1>
-            <p class="desc">
+            <p class="desc-md">
                 品牌APP 是提供品牌加值的產品，不單使用web，把場館裝進客戶的智慧型手機裡，除了提高品牌形象，更能有效地增加客戶出席率和業績表現。
             </p>
-            <li>
-                <ul>分類：UI/UX</ul>
-                <ul>負責項目：改版</ul>
-                <ul>製作公司：老虎網路科技有限公司</ul>
-                <ul>軟體：Figma</ul>
-            </li>
         </div>
+        <img src="img/tiger/customized_1/works_banner1.png"></img>
+        <p class="desc-sm">
+            品牌APP 是提供品牌加值的產品，不單使用web，把場館裝進客戶的智慧型手機裡，除了提高品牌形象，更能有效地增加客戶出席率和業績表現。
+        </p>
+        <li class="responsible">
+            <ul>分類：UI/UX</ul>
+            <ul>負責項目：改版</ul>
+            <ul>製作公司：老虎網路科技有限公司</ul>
+            <ul>軟體：Figma</ul>
+        </li>
     </header>
     <div class="dot-line" style="margin-top: 15px;"></div>
     <article class="chapter chapter-1">
@@ -269,25 +62,25 @@
     <div class="dot-line"></div>
     <article class="chapter chapter-2">
         <h2>UI 優化</h2>
-        <div style="max-width: 860px; margin: auto;">
-        <div class="pointer-block white">
-            <div class="pointer">
-                <div class="number">
-                    <h2> 客戶族群 . </h2>
+        <div style="position: relative; max-width: 860px; margin: auto;">
+            <div class="pointer-block white">
+                <div class="pointer">
+                    <div class="number">
+                        <h2> 客戶族群 . </h2>
+                    </div>
+                    <p>運動健身與美容沙龍業者</p>
                 </div>
-                <p>運動健身與美容沙龍業者</p>
-            </div>
-            <div class="dash"></div>
-            <div class="pointer">
-                <div class="number">
-                    <h2> 使用者族群 . </h2>
+                <div class="dash"></div>
+                <div class="pointer">
+                    <div class="number">
+                        <h2> 使用者族群 . </h2>
+                    </div>
+                    <p>20~50歲左右男女</p>
                 </div>
-                <p>20~50歲左右男女</p>
-            </div>
-            <div class="pointer-remark">
-                <p>風格：簡約時尚，圓潤與線條感搭配，凸顯介面層次與區塊感</p>
             </div>
         </div>
+        <div class="pointer-remark">
+            <p>風格：簡約時尚，圓潤與線條感搭配，凸顯介面層次與區塊感</p>
         </div>
         <h3 class="highlight-title" style="margin-top: 150px;">『啟動頁』</h3>
         <p>品牌色半透明底，後面可放置品牌形象照片，可豐富品牌形象</p>
@@ -298,7 +91,7 @@
                         <div class="triangle"></div>
                         舊版
                     </h2>
-                    <img src="img/tiger/customized_1/p_1.png" style="max-width: 225px;">
+                    <img src="img/tiger/customized_1/p_1.png" style="max-width: 410px;">
                 </div>
             </div>
             <div class="pointer" style="justify-content: end;">
