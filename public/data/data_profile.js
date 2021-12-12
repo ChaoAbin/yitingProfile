@@ -2,6 +2,26 @@ $.data_profile= [
 {
     "type": "UI/UX"
     ,"tpl": "customized"
+    ,"customizedLink": "profile_content_customized_2"
+    ,"title": "測試客製化"
+    ,"subTitle": "測試客製化"
+    ,"description": "測試客製化"
+    ,"responsible": "插畫與編排"
+    ,"company": "老虎網路科技有限公司"
+    ,"tool": "Illustrator"
+    ,"cover": "/img/tiger/product-dm-cover.png"
+    ,"icon": ""
+    ,"image": [
+        {
+            "img": "/img/tiger/product-dm-1.png"
+            ,"desc": ""
+        }
+    ]
+    ,"joinTime": "2021"
+},
+{
+    "type": "UI/UX"
+    ,"tpl": "customized"
     ,"customizedLink": "profile_content_customized_1"
     ,"title": "測試客製化"
     ,"subTitle": "測試客製化"

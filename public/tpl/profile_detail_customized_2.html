@@ -1,0 +1,259 @@
+<style>
+    .content {
+        font-family: "Open Sans", sans-serif;
+        font-style: normal;
+        letter-spacing: 1px;
+        max-width: 1160px;
+    }
+    p {
+        margin-bottom: 5px;
+    }
+    .icon-list img {
+        margin-left: 10px;
+        margin-bottom: 12px;
+    }
+    .icon-list img:first-child {
+        margin-left: 0px;
+    }
+
+    .go-top {
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        right: 20px;
+        bottom: 20px;
+        color: #5076AF;
+        font-size: 14pt;
+
+        display: none;
+        padding: 10px;
+        border: 1px solid;
+        border-radius: 100%;
+        background: #F7FAFF;
+        border-color: transparent;
+        cursor: pointer;
+    }
+    @media (min-width: 767px) {
+        body {
+            overflow-y: scroll;
+        }
+        .go-top {
+            right: 50px;
+            bottom: 50px;
+        }
+    }
+
+    /* 區塊 */
+    .block, .block img, .dot-line  {
+        position: relative;
+        width: 100%;
+    }
+    .dot-line {
+        border-top: 2px #4B79BD dotted;
+    }
+    /* header start */
+    header .text-block {
+        color: #3E66A2;
+        position: absolute;
+        top: 18.75%;
+        left: 3%;
+        width: 38.76%;
+        height: 80%;
+    }
+    header h1 {
+        color: #2B7BD1;
+        font-size: 28px;
+        line-height: 36px;
+        margin: 0px;
+        font-weight: 500;
+    }
+    header .desc {
+        margin: 7.2% 0 0 0;
+        font-size: 16px;
+        line-height: 27px;
+    }
+    header li {
+        position: absolute;
+        left: 0px;
+        bottom: 10%;
+        list-style-type: none;
+        color: #5076AF;
+    }
+    header ul {
+        padding: 0px;
+        font-size: 14px;
+        margin: 0px;
+    }
+    /* header end */
+
+    .chapter {
+        margin: 0px 7.7% 35px 7.7%;
+        text-align: center;
+        color: #3E66A1;
+    }
+    .chapter p {
+        font-size: 20px;
+        line-height: 36px;
+    }
+    .chapter h2 {
+        color: #2B7BD1;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 30px;
+        margin-top: 130px;
+        margin-bottom: 30px;
+    }
+
+    .chapter .pointer-block {
+        position: relative;
+        margin-top: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 160px;
+    }
+    .chapter .pointer-block h2 {
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+    .chapter .pointer {
+        position: relative;
+        padding-top: 35px;
+        flex: 1;
+        width: 34.5%;
+        height: 100%;
+        max-width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .chapter .pointer .number {
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 35px;
+        text-align: center;
+    }
+    .chapter .pointer-block p, .chapter .pointer-block img {
+        display: flex;
+    }
+    .chapter .pointer-block img {
+        width: 100%;
+    }
+    .chapter .dash {
+        width: 145.5px;
+        height: 0px;
+        border-top: 1px solid #AAC4E9;
+        transform: rotate(107.19deg);
+    }
+    .chapter .highlight-title {
+        display: inline-block;
+        line-height: 36px;
+        font-size: 20px;
+        color: #FFFFFF;
+        background: #2B7BD1;
+        border-radius: 3px;
+        margin-top: 30px;
+        padding: 3px 6px;
+    }
+    .chapter .demo-img {
+        width: 100%;
+    }
+    
+    /* chapter-2 start */
+    .chapter-2 {
+        margin-bottom: 120px;
+    }
+    .chapter-2 .pointer-block.white {
+        background-color: white;
+        height: 220px;
+        padding: 61px 29px 65px 29px;
+        box-shadow: 6px 4px 14px rgba(37, 80, 142, 0.1);
+        border-radius: 12px;
+    }
+    .chapter-2 .pointer-remark {
+        position: absolute;
+        bottom: -65px;
+        width: calc(100% - 88px);
+        height: 80px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+        background: #2B7BD1;
+        box-shadow: 6px 4px 14px rgba(37, 80, 142, 0.1);
+        border-radius: 12px;
+    }
+    .chapter-2 .pointer-remark p {
+        color: white;
+    }
+    .chapter-2 .highlight-title {
+        margin-top: 100px;
+        margin-bottom: 15px;
+    }
+    .chapter-2 .triangle {
+        width: 0;
+        height: 0;
+        display: inline-block;
+        border-style: solid;
+        border-width: 10px 7px 0 7px;
+        border-color: #3e66a1 transparent transparent transparent;
+    }
+    .chapter-2 .demo-img {
+        margin-top: 30px;
+    }
+    /* chapter-2 end */
+
+    /* 尺寸大於 768 px */
+    @media (min-width: 768px) {
+        .split-img .demo-img {
+            width: 49%;
+        }
+    }
+</style>
+<div 
+    style="color: #5076AF; padding-top: 10px;"
+    class="content col-xss-12 col-xss-offset-0 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 col-lg-12 col-lg-offset-0">
+    <div style="text-align: right; cursor: pointer;">
+        <img src="img/icon/btn_close.png" ng-click="pageBack()" style="width: 42px; height: 42px;">
+    </div>
+    <div class="icon-list">
+        <img src="img/icon/icon_pc.png">
+        <img src="img/icon/icon_phone.png">
+    </div>
+    <header class="block">
+        <img src="img/tiger/customized_2/works_banner2.png">
+        <div class="text-block">
+            <h1>17FIT</h1>
+            <h1>前台 增加多元支付與訂單歷程介面</h1>
+            <p class="desc">
+                就現有的前台介面增加使用者能勾選『不同的支付方式』，並增加能閱覽訂單的『訂單歷程』頁面，出UI/UX的文件。
+            </p>
+            <li>
+                <ul>分類：UI/UX</ul>
+                <ul>負責項目：增加功能介面</ul>
+                <ul>製作公司：老虎網路科技有限公司</ul>
+                <ul>軟體：Figma</ul>
+            </li>
+        </div>
+    </header>
+    <div class="dot-line" style="margin-top: 15px;"></div>
+    <article class="chapter chapter-2">
+        <h2>需求</h2>
+        <p style="margin-top: 30px;">現有功能只有單一支付選項，為了提供使用者及場館多元且更方便的選擇，增加多元支付的選項與相對應延伸出來的訂單歷程的介面。</p>
+        <h3 class="highlight-title">『UX 文件』</h3>
+        <img class="demo-img" src="img/tiger/customized_2/p2_ux_1.png">
+        <h3 class="highlight-title">『UI 文件』</h3>
+        <p>前台 RWD 、webadmin、通知信</p>
+        <div class="split-img">
+            <img class="demo-img" src="img/tiger/customized_2/p2_ui_1.png">
+            <img class="demo-img" src="img/tiger/customized_2/p2_ui_2.png">
+        </div>
+        <img class="demo-img" src="img/tiger/customized_2/p2_ui_3.png">
+    </article>
+    <!-- 至頂按鈕 -->
+    <div id="goTop" ng-click="screenTop()" class="go-top">Top</div>
+</div>

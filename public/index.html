@@ -205,6 +205,10 @@
                 templateUrl : "tpl/profile_detail_customized_1.html",
                 controller : "profile_content_customized_1"
             })
+            .when("/profile_content_customized_2/:index", {
+                templateUrl : "tpl/profile_detail_customized_2.html",
+                controller : "profile_content_customized_2"
+            })
             .when("/contact", {
                 templateUrl : "tpl/contact.html",
                 controller : "contact"
@@ -445,6 +449,29 @@
             //     },
             //     index: parseInt($routeParams.index)
             //   }
+            }
+        ]);
+        app.controller("profile_content_customized_2", ['$scope', '$routeParams', '$sce', 'profileData'
+            , function ($scope, $routeParams, $sce, profileData ) {
+              window.scrollTo(0, 0);
+              $('.navbar-collapse').collapse('hide');
+              $scope.profile = profileData.getByIndex($routeParams.index);
+              $scope.screenTop = function() {
+                  $('body,html').animate({
+                      scrollTop: 0 ,
+                      }, 700
+                  );
+              };
+              $scope.pageBack = function() {
+                if(window.history.length === 2) {
+                  window.location.href = window.location.origin + "/profile";
+                } else {
+                  window.history.back();
+                }
+              };
+              $scope.thisCanBeusedInsideNgBindHtml = function(someHtmlVar) {
+                return $sce.trustAsHtml(someHtmlVar);
+              };
             }
         ]);
         app.controller("contact", function ($scope) {
