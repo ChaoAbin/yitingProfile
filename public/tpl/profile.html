@@ -9,6 +9,7 @@
         position: relative;
         box-shadow: 0px 4px 9px #ABBDCF;
         background: white;
+        border-radius: 8px;
     }
     .profile-list {
         margin: 15px 0px;
@@ -113,6 +114,88 @@
         height: 40px;
     }
 
+    .customized {
+        margin-bottom: 45px;
+        height: auto;
+        filter: drop-shadow(6px 4px 14px rgba(37, 80, 142, 0.1));
+    }
+    .customized .mask {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        background-color: #2061C24D;
+        opacity: 0;
+        border-radius: 20px;
+    }
+    .customized img {
+        border-radius: 20px;
+    }
+    .customized:hover .mask {
+        opacity: 0.5;
+    }
+    .customized .see-detail {
+        position: absolute;
+        top: 13%;
+        left: 3.5%;
+        width: 34.5%;
+        height: 81.5%;
+        box-shadow: 6px 4px 14px rgba(37, 80, 142, 0.1);
+        border-radius: 20px;
+    }
+    .customized .see-detail-content {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        padding: 10%;
+        color: #FFFFFF;
+        letter-spacing: 1px;
+    }
+    .see-detail-content h3 {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 36px;
+        text-align: left;
+        margin: 0px 0px 22px 0px;
+    }
+    .see-detail-content p {
+        font-size: 16px;
+        line-height: 27px;
+        text-align: left;
+    }
+    .see-detail-content button {
+        padding: 10px 0px;
+        position: absolute;
+        bottom: 0px;
+        width: 80%;
+        background: #FFFFFF;
+        border-radius: 10px;
+        left: 0px;
+        margin: 0px 10% 10% 10%;
+        border: none;
+    }
+    .see-detail.customized-1 {
+        background-color: #656CEE;
+    }
+    .see-detail.customized-2 {
+        background-color: #38B1E3;
+    }
+    .see-detail.customized-1 .see-detail-content button {
+        color: #656CEE;
+    }
+    .see-detail.customized-1 .see-detail-content button:hover {
+        color: #fff;
+        background-color: #444BCD;
+        border: 1px solid #fff;
+    }
+    .see-detail.customized-2 .see-detail-content button:hover {
+        color: #fff;
+        background-color: #088CC2;
+        border: 1px solid #fff;
+    }
+
     @media (max-width: 768px) {
         .profile-list {
             height: auto;
@@ -152,10 +235,36 @@
     </div>
     <div class="block col-xss-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
     </div>
-    <div ng-repeat="(k, val) in profile | toArray" ng-if="val['type'] == showType || showType == '全部'" class="profile-list col-xss-12 col-xs-6 col-sm-4 col-md-3 col-lg-3" style="text-align: center">
-        <a href="{{(val['tpl'] !== 'customized' ? 'profile_content/' + val.key : val.customizedLink + '/' + val.key)}}" style="text-decoration:none;">
+    <div class="clearfix"></div>
+    <div 
+        ng-repeat="(k, val) in profile | toArray"
+        ng-if="val['type'] == showType || showType == '全部'"
+        class="{{ 'profile-list col-xss-12 ' + (val.tpl !== 'customized' ? 'col-xs-6 col-sm-4 col-md-3 col-lg-3' : 'customized') }}"
+        style="text-align: center">
+        <ng-template ng-if="val.tpl === 'customized'">
+            <div style="position: relative; width: 100%; height: 100%;">
+                <img 
+                    style="width: 100%;"
+                    src="{{ val.cover }}">
+                </img>
+                <div class="mask"></div>
+                <div class="see-detail {{ val.detailButtonClass }}">
+                    <div class="see-detail-content">
+                        <h3 ng-bind-html="thisCanBeusedInsideNgBindHtml(val.title)"></h3>
+                        <p>{{ val.subTitle }}</p>
+                        <a href="{{ val.customizedLink + '/' + val.key }}" style="text-decoration:none;">
+                            <button class="{{val.detailButtonClass}}">
+                                了解專案細節
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+        <ng-template ng-if="val.tpl !== 'customized'">
+        <a href="{{ 'profile_content/' + val.key }}" style="text-decoration:none;">
             <div class="profile-content">
-                <div style="position: relative; overflow: hidden;">
+                <div style="position: relative; overflow: hidden; border-radius: 8px 8px 0px 0px;">
                     <img style="width: 100%; border-bottom: 1px solid #E2E9F1;" ng-src="{{val.cover}}">                
                 </div>
                 <div style="padding: 10px; text-align: left; margin: 10px 0px; font-size: 12pt; min-height: 45px;" >
@@ -170,6 +279,7 @@
                 </div>
             </div>
         </a>
+        </ng-template>
     </div>
 </div>
 

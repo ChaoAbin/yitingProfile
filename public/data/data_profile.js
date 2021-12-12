@@ -2,14 +2,15 @@ $.data_profile= [
 {
     "type": "UI/UX"
     ,"tpl": "customized"
-    ,"customizedLink": "profile_content_customized_2"
-    ,"title": "測試客製化"
-    ,"subTitle": "測試客製化"
+    ,"customizedLink": "profile_content_customized_1"
+    ,"detailButtonClass": "customized-1"
+    ,"title": "17FIT<br >品牌APP 2.0改版"
+    ,"subTitle": "品牌APP 是提供品牌加值的產品，不單使用web，把場館裝進客戶的智慧型手機裡，除了提高品牌形象，更能有效地增加客戶出席率和業績表現。"
     ,"description": "測試客製化"
     ,"responsible": "插畫與編排"
     ,"company": "老虎網路科技有限公司"
     ,"tool": "Illustrator"
-    ,"cover": "/img/tiger/product-dm-cover.png"
+    ,"cover": "img/tiger/customized_1/worksh_banner1.png"
     ,"icon": ""
     ,"image": [
         {
@@ -22,14 +23,15 @@ $.data_profile= [
 {
     "type": "UI/UX"
     ,"tpl": "customized"
-    ,"customizedLink": "profile_content_customized_1"
-    ,"title": "測試客製化"
-    ,"subTitle": "測試客製化"
+    ,"customizedLink": "profile_content_customized_2"
+    ,"detailButtonClass": "customized-2"
+    ,"title": "17FIT<br>前台 增加多元支付與訂單歷程介面"
+    ,"subTitle": "就現有的前台介面增加使用者能勾選『不同的支付方式』，並增加能閱覽訂單的『訂單歷程』頁面，出UI/UX的文件。"
     ,"description": "測試客製化"
     ,"responsible": "插畫與編排"
     ,"company": "老虎網路科技有限公司"
     ,"tool": "Illustrator"
-    ,"cover": "/img/tiger/product-dm-cover.png"
+    ,"cover": "img/tiger/customized_2/worksh_banner2.png"
     ,"icon": ""
     ,"image": [
         {
