@@ -217,6 +217,9 @@ header .responsible {
         position: relative;
         width: 100%;
     }
+    header img {
+        margin-top: 10px;
+    }
     .chapter .pointer-block,
     .chapter .pointer-block .pointer,
     .chapter .pointer-block .number {
@@ -257,6 +260,12 @@ header .responsible {
     header .desc-sm, header .desc-md, header .responsible {
         font-size: 12px;
         line-height: 17px;
+    }
+    .chapter h2 {
+        margin-top: 50px;
+    }
+    .chapter .pointer-block {
+        margin-top: 0px;
     }
 }
 /* 尺寸大於 768 px */

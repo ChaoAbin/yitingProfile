@@ -96,7 +96,6 @@
 
     .navbar-horizontal {
         color: #93B3E3;
-        margin-bottom: 20px;
     }
     .navbar-horizontal li:first-child {
         margin-left: 0px;
@@ -173,7 +172,7 @@
         background: #FFFFFF;
         border-radius: 10px;
         left: 0px;
-        margin: 0px 10% 10% 10%;
+        margin: 0px 5% 10% 10%;
         border: none;
     }
     .see-detail.customized-1 {
@@ -199,7 +198,6 @@
     @media (max-width: 767px) {
         .profile-list {
             height: auto;
-            margin: 10px 0px 0px 0px;
         }
         .profile-list:hover .profile-content {
             animation: none;
@@ -218,10 +216,69 @@
         .block {
             height: 15px;
         }
+        .customized .see-detail-content {
+            padding: 5%;
+        }
+        .customized img {
+            border-radius: 8px 8px 0px 0px;
+        }
+        .customized .see-detail-content a,
+        .customized .see-detail-content a button {
+            position: relative;
+            width: 100%;
+            min-height: 46px;
+            margin: 0px;
+            display: inline-block;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .customized .see-detail {
+            position: relative;
+            width: 100%;
+            height: auto;
+            left: 0px;
+            top: 0px;
+            border-radius: 0px 0px 8px 8px;
+        }
+        .customized .mask {
+            border-radius: 8px;
+        }
+    }
+    @media (max-width: 992px) {
+        .see-detail {
+            top: 5%;
+            left: 2.5%;
+            height: 90%;
+        }
+        .customized .see-detail-content h3 {
+            font-size: 22px;
+            line-height: 29px;
+            margin-bottom: 12px;
+        }
+        .customized .see-detail-content p {
+            font-size: 12px;
+            line-height: 17px;
+        }
+        .customized .see-detail-content button {
+            margin: 0 10% 6% 10%;
+            font-size: 12px;
+            line-height: 17px;
+            padding: 5px 0;
+        }
+    }
+    @media (min-width: 992px) and (max-width: 1199px) {
+        .customized .see-detail-content h3 {
+            font-size: 25px;
+            line-height: 32px;
+        }
+        .customized .see-detail-content p {
+            font-size: 14px;
+            line-height: 22px;
+        }
     }
 </style>
 
-<div class="col-xss-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<div class="col-xss-12 col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding-top: 20px;">
     <div class="navbar-collapse collapse navbar-collapse-horizonta" style="position: fixed; z-index: 1; background-color: #EFF4FB; width: 100%;">
         <ul class="nav navbar-nav navbar-horizontal">
             <li class="{{val == showType ? 'show' : ''}}" ng-repeat="(k, val) in type" style="{{(val == showType ? 'color: #548FCE':'')}} ">
@@ -239,7 +296,7 @@
     <div 
         ng-repeat="(k, val) in profile | toArray"
         ng-if="val['type'] == showType || showType == '全部'"
-        class="{{ 'profile-list col-xss-12 ' + (val.tpl !== 'customized' ? 'col-xs-6 col-sm-4 col-md-3 col-lg-3' : 'customized') }}"
+        class="{{ 'profile-list col-xss-12 ' + (val.tpl !== 'customized' ? 'col-xs-6 col-sm-4 col-md-3 col-lg-3' : 'customized ') }}"
         style="text-align: center">
         <ng-template ng-if="val.tpl === 'customized'">
             <div style="position: relative; width: 100%; height: 100%;">

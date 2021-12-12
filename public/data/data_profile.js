@@ -4,7 +4,7 @@ $.data_profile= [
     ,"tpl": "customized"
     ,"customizedLink": "profile_content_customized_1"
     ,"detailButtonClass": "customized-1"
-    ,"title": "17FIT<br >品牌APP 2.0改版"
+    ,"title": "17FIT<br>品牌APP 2.0改版"
     ,"subTitle": "品牌APP 是提供品牌加值的產品，不單使用web，把場館裝進客戶的智慧型手機裡，除了提高品牌形象，更能有效地增加客戶出席率和業績表現。"
     ,"description": "測試客製化"
     ,"responsible": "插畫與編排"
