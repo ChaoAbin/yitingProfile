@@ -113,7 +113,7 @@ header .responsible {
 
 .chapter .pointer-block {
     position: relative;
-    margin-top: 90px;
+    margin-top: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -251,6 +251,9 @@ header .responsible {
     .chapter.chapter-2 .pointer-remark {
         top: 25px;
         width: 100%;
+    }
+    .chapter.chapter-2 .pointer-remark p {
+        line-height: 25px;
     }
 }
 @media (max-width: 767px) {
