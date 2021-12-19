@@ -192,7 +192,7 @@
                 controller : "home"
             })
             .when("/about", {
-                templateUrl : "tpl/about.html",
+                templateUrl : "tpl/about_new.html",
                 controller : "about"
             })
             .when("/profile", {
@@ -339,6 +339,10 @@
                 $('.navbar-collapse').collapse('hide');
                 var history = historyData.getAll();
                 $scope.history = history;
+
+                $scope.thisCanBeusedInsideNgBindHtml = function(someHtmlVar) {
+                    return $sce.trustAsHtml(someHtmlVar);
+                };
             }
         ]);
         app.controller("profile", ['$scope', '$location', '$sce', 'profileData'

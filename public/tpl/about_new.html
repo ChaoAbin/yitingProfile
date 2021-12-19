@@ -59,6 +59,19 @@
     .item-bullet {
         position: static;
     }
+    .history .row {
+        margin-bottom: 25px;
+    }
+    .row:before, .row:after {
+        content: " ";
+        display: table;
+    }
+    .row:after {
+        clear: both;
+    }
+    .history .row:last-child .item-bullet:after {
+        opacity: 0;
+    }
     .item-bullet:after {
         content: '';
         width: 1px;
@@ -89,6 +102,7 @@
         font-size: 18px;
         font-weight: bold;
         color: #548FCE;
+        margin: 0px 0px 10px 0px;
     }
     .item li {
         list-style: none;
@@ -102,6 +116,140 @@
         color: #548FCE;
  
         letter-spacing: 1px;
+    }
+
+    /* profile list */
+    .profile-list {
+        height: auto;
+    }
+    .profile-list:hover .profile-content {
+        animation: none;
+    }
+    .profile-content {
+        position: relative;
+        box-shadow: 0px 4px 9px #ABBDCF;
+        background: white;
+        border-radius: 8px;
+    }
+    .profile-list {
+        margin: 15px 0px 50px 0px;
+        cursor: pointer;
+        height: 312px;
+    }
+    /* .profile-list:hover .profile-content {
+        animation-name: mouseOverProfile;
+        animation-duration:2s;
+        animation-iteration-count:infinite;
+        animation-timing-function:step-start;
+    } */
+    .all-rights-reserved {
+        display: none;
+    }
+    .profile-title, .profile-sub-title {
+        font-size: 15px;
+        color: #548FCE;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+    }
+    .profile-sub-title {
+        width: 100%;
+        height: 20px;
+        margin-bottom: 10px;
+    }
+    .profile-desc {
+        font-size: 13px;
+        color: #93B3E3;
+        height: 37px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+    .nav > li > a.profile-type-link:hover {
+        background-color: transparent;
+    }
+    .nav > li > a.profile-type-link {
+        padding: 0px;
+    }
+
+    @keyframes mouseOverProfile {
+        0%{
+            top: 0px;
+        }
+        100%{
+            top: -20px;
+        }
+    }
+    .customized .see-detail {
+        position: relative;
+        width: 100%;
+        height: auto;
+        left: 0px;
+        top: 0px;
+        border-radius: 0px 0px 8px 8px;
+    }
+    .customized .see-detail-content {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        padding: 10%;
+        color: #FFFFFF;
+        letter-spacing: 1px;
+    }
+    .see-detail-content h3 {
+        color: #ffffff;
+        font-weight: 500;
+        text-align: left;
+        margin: 0px 0px 22px 0px;
+    }
+    .see-detail.customized-1 {
+        background-color: #656CEE;
+    }
+    .see-detail.customized-2 {
+        background-color: #38B1E3;
+    }
+    .see-detail.customized-1 .see-detail-content button {
+        color: #656CEE;
+    }
+    .see-detail.customized-1 .see-detail-content button:hover {
+        color: #fff;
+        background-color: #444BCD;
+        border: 1px solid #fff;
+    }
+    .see-detail.customized-2 .see-detail-content button:hover {
+        color: #fff;
+        background-color: #088CC2;
+        border: 1px solid #fff;
+    }
+    .customized .see-detail-content {
+        padding: 5%;
+    }
+    .see-detail-content button {
+        padding: 10px 0px;
+        position: absolute;
+        bottom: 0px;
+        width: 80%;
+        background: #FFFFFF;
+        border-radius: 10px;
+        left: 0px;
+        margin: 0px 5% 10% 10%;
+        border: none;
+    }
+    .customized img {
+        border-radius: 8px 8px 0px 0px;
+    }
+    .customized .see-detail-content a,
+    .customized .see-detail-content a button {
+        position: relative;
+        width: 100%;
+        min-height: 46px;
+        margin: 0px;
+        display: inline
     }
 
     @media (max-width: 767px) {
@@ -140,9 +288,9 @@
         <p>Hi, I'm Michelle</p>
         <br>
         <p>設計領域約6年的經歷，在團隊裡負責 APP、Web、Mobile web 的 UIUX 設計，樂於與不同領域的專業人士溝通與合作嘗試不同的可能性，並且用心專注於細節讓團隊合作效率提升，以全面的思維解決問題，具備從產品策略至設計實踐的專業與視野。</p>
-        <p style="margin: 18px 0px 18px 0px;">經歷</p>
+        <p style="margin: 18px 0px 18px 0px;">經歷：</p>
         <p>執行過幾款 APP 改版的專案，像是 17FIT 品牌 APP、薦片播放器 APP、PICOWORK 雲端協作系統 APP...等等，且多為改版的主要負責設計師 ; 除了APP 的經歷外，也有營運、線上消費、雲端協作OS的前端、後台、Kiosk 自動購票系統的設計經驗。</p>
-        <p style="margin: 18px 0px 18px 0px;">擅長工具</p>
+        <p style="margin: 18px 0px 18px 0px;">擅長工具：</p>
         <div>Figma | Sketch | Adobe XD | Illustrator | Photoshop</div>
         <div class="phone-pc-block">
             <img style="margin-left: 10px;" src="img/icon/icon_phone.png">
@@ -165,18 +313,62 @@
 
     <div class="dot-line"></div>
 
-    <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
+    <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 history">
         <div class="row" ng-repeat="(key, val) in history | orderBy:'-time'">
             <div class="col-xs-2 col-sm-1 item-bullet"></div>
             <div class="col-xs-10 col-sm-11 item">
                 <h3><b>{{ val.company }} {{ val.title }}</b></h3>
                 <h3><b>{{ val.time }}</b></h3>
-                <ul ng-repeat="(key2, val2) in val.jobTitle" class="work-list">
-                    <li>{{val2}}</li>
+                <ul class="work-list">
+                    <li ng-repeat="(key2, val2) in val.jobTitle">{{val2}}</li>
                 </ul>
+                <br>
                 <ul class="work-list description">
                     <li>{{val.desc}}</li>
                 </ul>
+                <div 
+                    class="{{ 'profile-list col-xs-12 col-sm-6 col-md-6 col-lg-6 ' + (val2.tpl !== 'customized' ? '' : 'customized ') }}"
+                    ng-repeat="(key2, val2) in val.profile">
+                    <ng-template ng-if="val2.tpl === 'customized'">
+                        <div style="position: relative; width: 100%; height: 100%;">
+                            <img 
+                                style="width: 100%;"
+                                src="{{ val2.cover }}">
+                            </img>
+                            <div class="mask"></div>
+                            <div class="see-detail {{ val2.detailButtonClass }}">
+                                <div class="see-detail-content">
+                                    <h3 ng-bind-html="thisCanBeusedInsideNgBindHtml(val2.title)"></h3>
+                                    <p ng-bind-html="thisCanBeusedInsideNgBindHtml(val2.subTitle)"></p>
+                                    <a href="{{ val2.customizedLink }}" style="text-decoration:none;">
+                                        <button class="{{val2.detailButtonClass}}">
+                                            了解專案細節
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </ng-template>
+                    <ng-template ng-if="val2.tpl !== 'customized'">
+                        <a href="{{ val2.link }}" style="text-decoration:none;">
+                            <div class="profile-content">
+                                <div style="position: relative; overflow: hidden; border-radius: 8px 8px 0px 0px;">
+                                    <img style="width: 100%; border-bottom: 1px solid #E2E9F1;" ng-src="{{val2.cover}}">                
+                                </div>
+                                <div style="padding: 10px; text-align: left; margin: 10px 0px; font-size: 12pt; min-height: 45px;" >
+                                    <div class="profile-title">
+                                        {{val2.title}}
+                                        <img ng-if="val2.type == 'UI/UX' && val2.icon.indexOf('pc') != -1" src="img/icon/icon_pc.png" style="float: right; margin-left: 10px;">
+                                        <img ng-if="val2.type == 'UI/UX' && val2.icon.indexOf('mobile') != -1" src="img/icon/icon_phone.png" style="float: right; margin-left: 10px;">
+                                    </div>
+                                    <div class="profile-sub-title">{{val2.subTitle}}</div>
+                                    <p class="profile-desc" ng-bind-html="thisCanBeusedInsideNgBindHtml(val2.description)">
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </ng-template>
+                </div>
             </div>
         </div>
     </div>

@@ -1,7 +1,7 @@
 $.data_history = [{
 	"company": "老虎網路科技有限公司"
 	,"title": "UI/UX設計師"
-	,"desc": "因團隊裡只有我1位 Designer ，負責公司所有需設計的專案，最大的挑戰是在有限的時間與人力資源下迅速處理與討論，跨部門的協作溝通了解短時間內要如何做到客戶需求與團隊開發的平衡，提升產品的積極性。"
+	,"desc": "因團隊裡只有我1位 Designer ，負責公司所有需設計的專案，最大的挑戰是在有限的時間與人力資源下迅速處理與討論，跨部門的協作溝通了解短時間內要如何做到客戶需求與團隊開發的平衡，提升產品的積極性。除了現有產品的新功能規劃，為了提供客戶更好的產品與操作體驗，也負責執行 17FIT 改版專案的規劃與設計，如：品牌APP 2.0 改版。"
 	,"jobTitle": [
 		".APP的UI/UX設計"
 		, ".Web的UI/UX設計"
@@ -10,6 +10,48 @@ $.data_history = [{
 	]
 	,"link": ""
 	,"time": "2020/09~2021/06"
+	,"profile": [{
+		"tpl": "customized"
+		,"customizedLink": "profile_content_customized_1/0"
+		,"detailButtonClass": "customized-1"
+		,"title": "17FIT<br>品牌APP 2.0改版"
+		,"subTitle": "品牌APP 是提供品牌加值的產品，不單使用web，把場館裝進客戶的智慧型手機裡，除了提高品牌形象，更能有效地增加客戶出席率和業績表現。"
+		,"description": "測試客製化"
+		,"cover": "img/tiger/customized_1/worksh_banner1.png"
+	},{
+		"tpl": "customized"
+		,"customizedLink": "profile_content_customized_2/0"
+		,"detailButtonClass": "customized-2"
+		,"title": "17FIT<br>前台 增加多元支付與訂單歷程介面"
+		,"subTitle": "就現有的前台介面增加使用者能勾選『不同的支付方式』，並增加能閱覽訂單的『訂單歷程』頁面，出UI/UX的文件。<br>"
+		,"description": "測試客製化"
+		,"cover": "img/tiger/customized_2/worksh_banner2.png"
+	}]
+},{
+	"company": "隨你科技有限公司"
+	,"title": "UI/UX設計師"
+	,"desc": "公司產品為影音串流平台，剛進入團隊就是負責 薦片播放器APP 的 UI 改版，並依現有的功能再繼續完善用戶中心的流程與等級規則，依照不同用戶等級，使用 APP 也會有功能上的區別。工程團隊大多都是遠距合作，非常挑戰遠距協作與溝通，且大多用戶為大陸人，所以用字遣詞上需要特別注意。"
+	,"jobTitle": [
+		".APP的UI/UX設計"
+		, ".公司形象視覺相關設計"
+	]
+	,"link": "/profile_content/2"
+	,"time": "2019/12~2020/05"
+	,"profile": [{
+		"tpl": "app"
+		,"title": "JP播放器"
+		,"subTitle": "主頁規劃"
+		,"description": "將PM規劃的第一版主頁內容流程討論後，設計第一版的設計供執行長確認風格及配色，接著切圖及標註尺寸提供給工程師執行"
+		,"cover": "/img/jp/jp-player-home-page-cover.png"
+		,"icon": ["mobile"]
+	},{
+		"tpl": "app"
+		,"title": "JP播放器用戶中心"
+		,"subTitle": "重新規劃用戶中心流程"
+		,"description": "參與規劃用戶中心流程與內容，提出流程與主管溝通後確認沒問題接著設計UI"
+		,"cover": "/img/jp/account-mangaer-center-cover.png"
+		,"icon": ["mobile"]
+	}]
 },{
 	"company": "協作雲端科技有限公司"
 	,"title": "UI/UX設計師"
@@ -22,6 +64,21 @@ $.data_history = [{
 	]
 	,"link": ""
 	,"time": "2016/03~2019/03"
+	,"profile": [{
+		"tpl": "website"
+		,"title": "雲端作業系統-APP"
+		,"subTitle": "2018第二次改版提案"
+		,"description": "將現有的APP功能做UI/UX的改版提案，經過設計團隊比稿後與執行長提案報告，最終選定我的版本做後續的延伸設計"
+		,"cover": "/img/picowork/app-sec-update-cover.png"
+		,"icon": ["mobile"]
+	},{
+		"tpl": "website"
+		,"title": "雲端作業系統-APP"
+		,"subTitle": "2018第二次改版執行-主頁"
+		,"description": "設計團隊比稿後定稿版本「主頁」UI/UX設計"
+		,"cover": "/img/picowork/app-sec-update-main-page-UI-cover.png"
+		,"icon": ["mobile"]
+	}]
 },{
 	"company": "靡風科技有限公司"
 	,"title": "設計師"
