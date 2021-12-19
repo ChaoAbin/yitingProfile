@@ -1,0 +1,183 @@
+<style>
+    /* navbar: highlight select item */
+    #about div.tab-circle {
+        visibility: visible;
+    }
+    #about > a {
+        color: #548FCE;
+    }
+
+    /* common */
+    .block, .block img, .dot-line  {
+        position: relative;
+        width: 100%;
+    }
+    .dot-line {
+        margin: 60px 0px;
+        border-top: 2px #4B79BD dotted;
+    }
+    
+    /* header block */
+    .heand {
+        position: relative;
+        color: #548FCE;
+    }
+    .my-photo {
+        width: 100%;
+    }
+    .name-block {
+        position: absolute;
+        height: 100px;
+        left: -20px;
+        top: 0px;
+        bottom: 90px;
+        margin: auto;
+    }
+    .name-block p {
+        margin-bottom: 0px;
+    }
+    .name-en {
+        font-size: 48px;
+    }
+    .name-ch {
+        font-size: 20px;
+    }
+    .profile-img {
+        float: right;
+    }
+    .profile-text {
+        float: left;
+        color: #548FCE;
+    }
+    .phone-pc-block {
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+    }
+
+    /* time line */
+    .item-bullet {
+        position: static;
+    }
+    .item-bullet:after {
+        content: '';
+        width: 1px;
+        height: 100%;
+        background-color: #548FCE;
+        display: block;
+        margin-left: 7.5px;
+        top: 10px;
+        z-index: 0;
+    }
+    .item-bullet:before, .item-bullet:after {
+        position: absolute;
+        left: 4.1666666667%;
+    }
+    .item-bullet:before {
+        content: ' ';
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        text-align: center;
+        display: inline-block;
+        background-color: #548FCE;
+        margin-top: 10px;
+        margin-left: 0.5px;
+        z-index: 1;
+    }
+    .item h3 {
+        font-size: 18px;
+        font-weight: bold;
+        color: #548FCE;
+    }
+    .item li {
+        list-style: none;
+    }
+    .item ul, .item li {
+        padding-left: 0px;
+        font-size: 16px;
+        color: #81A5CC;
+    }
+    .item .description li {
+        color: #548FCE;
+ 
+        letter-spacing: 1px;
+    }
+
+    @media (max-width: 767px) {
+	    .timeline {
+            left: 0px;
+        }
+        .name-block {
+            left: 0px;
+        }
+    }
+    @media (min-width: 992px) {
+        /* header block */
+        .profile-img.col-md-6 {
+            float: left;
+        }
+        .profile-text.col-md-6 {
+            float: right;
+            padding-top: 70px;
+        }
+    }
+    @media (min-width: 1200px) {
+        /* header block */
+        .profile-img.col-lg-6 {
+            float: left;
+        }
+        .profile-text.col-lg-6 {
+            float: right;
+            padding-top: 70px;
+        }
+    }
+</style>
+
+<div class="about-block">
+    <div class="col-xss-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 profile-text">
+        <p id="title" style="font-weight: bold; font-size: 15pt; margin-bottom: 20px; ">UX/UI 設計師，專長平面設計、CIS設計、UX/UI設計</p>
+        <p>Hi, I'm Michelle</p>
+        <br>
+        <p>設計領域約6年的經歷，在團隊裡負責 APP、Web、Mobile web 的 UIUX 設計，樂於與不同領域的專業人士溝通與合作嘗試不同的可能性，並且用心專注於細節讓團隊合作效率提升，以全面的思維解決問題，具備從產品策略至設計實踐的專業與視野。</p>
+        <p style="margin: 18px 0px 18px 0px;">經歷</p>
+        <p>執行過幾款 APP 改版的專案，像是 17FIT 品牌 APP、薦片播放器 APP、PICOWORK 雲端協作系統 APP...等等，且多為改版的主要負責設計師 ; 除了APP 的經歷外，也有營運、線上消費、雲端協作OS的前端、後台、Kiosk 自動購票系統的設計經驗。</p>
+        <p style="margin: 18px 0px 18px 0px;">擅長工具</p>
+        <div>Figma | Sketch | Adobe XD | Illustrator | Photoshop</div>
+        <div class="phone-pc-block">
+            <img style="margin-left: 10px;" src="img/icon/icon_phone.png">
+            <img style="margin-left: 10px;" src="img/icon/icon_pc.png">
+        </div>
+ 
+    </div>
+
+    <div class="col-xss-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 profile-img">
+        <div class="heand">
+            <img class="img-responsive my-photo" src="img/my-michelle.png">
+            <div class="name-block">
+                <p class="name-en">Michelle</p>
+                <p class="name-ch">莊貽婷</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div class="dot-line"></div>
+
+    <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
+        <div class="row" ng-repeat="(key, val) in history | orderBy:'-time'">
+            <div class="col-xs-2 col-sm-1 item-bullet"></div>
+            <div class="col-xs-10 col-sm-11 item">
+                <h3><b>{{ val.company }} {{ val.title }}</b></h3>
+                <h3><b>{{ val.time }}</b></h3>
+                <ul ng-repeat="(key2, val2) in val.jobTitle" class="work-list">
+                    <li>{{val2}}</li>
+                </ul>
+                <ul class="work-list description">
+                    <li>{{val.desc}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
