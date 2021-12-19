@@ -11,20 +11,18 @@ $.data_history = [{
 	,"link": ""
 	,"time": "2020/09~2021/06"
 	,"profile": [{
-		"tpl": "customized"
-		,"customizedLink": "profile_content_customized_1/0"
+		"customizedLink": "profile_content_customized_1/0"
 		,"detailButtonClass": "customized-1"
-		,"title": "17FIT<br>品牌APP 2.0改版"
-		,"subTitle": "品牌APP 是提供品牌加值的產品，不單使用web，把場館裝進客戶的智慧型手機裡，除了提高品牌形象，更能有效地增加客戶出席率和業績表現。"
-		,"description": "測試客製化"
+		,"title": "17FIT"
+		,"subTitle": "品牌APP 2.0改版"
+		,"description": "品牌APP 是提供品牌加值的產品，不單使用web，把場館裝進客戶的智慧型手機裡，除了提高品牌形象，更能有效地增加客戶出席率和業績表現。"
 		,"cover": "img/tiger/customized_1/worksh_banner1.png"
 	},{
-		"tpl": "customized"
-		,"customizedLink": "profile_content_customized_2/0"
+		"customizedLink": "profile_content_customized_2/0"
 		,"detailButtonClass": "customized-2"
-		,"title": "17FIT<br>前台 增加多元支付與訂單歷程介面"
-		,"subTitle": "就現有的前台介面增加使用者能勾選『不同的支付方式』，並增加能閱覽訂單的『訂單歷程』頁面，出UI/UX的文件。<br>"
-		,"description": "測試客製化"
+		,"title": "17FIT"
+		,"subTitle": "前台 增加多元支付與訂單歷程介面"
+		,"description": "就現有的前台介面增加使用者能勾選『不同的支付方式』，並增加能閱覽訂單的『訂單歷程』頁面，出UI/UX的文件。"
 		,"cover": "img/tiger/customized_2/worksh_banner2.png"
 	}]
 },{
@@ -38,17 +36,18 @@ $.data_history = [{
 	,"link": "/profile_content/2"
 	,"time": "2019/12~2020/05"
 	,"profile": [{
-		"tpl": "app"
+		"customizedLink": "profile_content/2"
+		,"detailButtonClass": "customized-1"
 		,"title": "JP播放器"
 		,"subTitle": "主頁規劃"
-		,"description": "將PM規劃的第一版主頁內容流程討論後，設計第一版的設計供執行長確認風格及配色，接著切圖及標註尺寸提供給工程師執行"
+		,"description": "將PM規劃的第一版主頁內容流程討論後，設計第一版的設計供執行長確認風格及配色。"
 		,"cover": "/img/jp/jp-player-home-page-cover.png"
-		,"icon": ["mobile"]
 	},{
-		"tpl": "app"
+		"customizedLink": "profile_content/3"
+		,"detailButtonClass": "customized-2"
 		,"title": "JP播放器用戶中心"
 		,"subTitle": "重新規劃用戶中心流程"
-		,"description": "參與規劃用戶中心流程與內容，提出流程與主管溝通後確認沒問題接著設計UI"
+		,"description": "參與規劃用戶中心流程與內容，提出流程與主管溝通後確認沒問題接著設計UI。"
 		,"cover": "/img/jp/account-mangaer-center-cover.png"
 		,"icon": ["mobile"]
 	}]
@@ -65,17 +64,19 @@ $.data_history = [{
 	,"link": ""
 	,"time": "2016/03~2019/03"
 	,"profile": [{
-		"tpl": "website"
+		"customizedLink": "profile_content/10"
+		,"detailButtonClass": "customized-1"
 		,"title": "雲端作業系統-APP"
 		,"subTitle": "2018第二次改版提案"
-		,"description": "將現有的APP功能做UI/UX的改版提案，經過設計團隊比稿後與執行長提案報告，最終選定我的版本做後續的延伸設計"
+		,"description": "將現有的APP功能做UI/UX的改版提案，經過設計團隊比稿後與執行長提案報告，最終選定我的版本做後續的延伸設計。"
 		,"cover": "/img/picowork/app-sec-update-cover.png"
 		,"icon": ["mobile"]
 	},{
-		"tpl": "website"
+		"customizedLink": "profile_content/11"
+		,"detailButtonClass": "customized-2"
 		,"title": "雲端作業系統-APP"
 		,"subTitle": "2018第二次改版執行-主頁"
-		,"description": "設計團隊比稿後定稿版本「主頁」UI/UX設計"
+		,"description": "設計團隊比稿後定稿版本「主頁」UI/UX設計。"
 		,"cover": "/img/picowork/app-sec-update-main-page-UI-cover.png"
 		,"icon": ["mobile"]
 	}]

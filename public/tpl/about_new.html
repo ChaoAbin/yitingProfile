@@ -100,6 +100,7 @@
     }
     .item h3 {
         font-size: 18px;
+        line-height: 26px;
         font-weight: bold;
         color: #548FCE;
         margin: 0px 0px 10px 0px;
@@ -130,11 +131,6 @@
         box-shadow: 0px 4px 9px #ABBDCF;
         background: white;
         border-radius: 8px;
-    }
-    .profile-list {
-        margin: 15px 0px 50px 0px;
-        cursor: pointer;
-        height: 312px;
     }
     /* .profile-list:hover .profile-content {
         animation-name: mouseOverProfile;
@@ -327,47 +323,25 @@
                     <li>{{val.desc}}</li>
                 </ul>
                 <div 
-                    class="{{ 'profile-list col-xs-12 col-sm-6 col-md-6 col-lg-6 ' + (val2.tpl !== 'customized' ? '' : 'customized ') }}"
+                    class="profile-list col-xs-12 col-sm-6 col-md-6 col-lg-6 customized"
                     ng-repeat="(key2, val2) in val.profile">
-                    <ng-template ng-if="val2.tpl === 'customized'">
-                        <div style="position: relative; width: 100%; height: 100%;">
-                            <img 
-                                style="width: 100%;"
-                                src="{{ val2.cover }}">
-                            </img>
-                            <div class="mask"></div>
-                            <div class="see-detail {{ val2.detailButtonClass }}">
-                                <div class="see-detail-content">
-                                    <h3 ng-bind-html="thisCanBeusedInsideNgBindHtml(val2.title)"></h3>
-                                    <p ng-bind-html="thisCanBeusedInsideNgBindHtml(val2.subTitle)"></p>
-                                    <a href="{{ val2.customizedLink }}" style="text-decoration:none;">
-                                        <button class="{{val2.detailButtonClass}}">
-                                            了解專案細節
-                                        </button>
-                                    </a>
-                                </div>
+                    <a href="{{ val2.customizedLink }}" style="text-decoration:none;">
+                    <div style="position: relative; width: 100%; height: 100%;">
+                        <img 
+                            style="width: 100%;"
+                            src="{{ val2.cover }}">
+                        </img>
+                        <div class="mask"></div>
+                        <div class="see-detail {{ val2.detailButtonClass }}">
+                            <div class="see-detail-content">
+                                <h3>
+                                    {{ val2.title }}<br>{{ val2.subTitle }}
+                                </h3>
+                                <p>{{ val2.description }}</p>
                             </div>
                         </div>
-                    </ng-template>
-                    <ng-template ng-if="val2.tpl !== 'customized'">
-                        <a href="{{ val2.link }}" style="text-decoration:none;">
-                            <div class="profile-content">
-                                <div style="position: relative; overflow: hidden; border-radius: 8px 8px 0px 0px;">
-                                    <img style="width: 100%; border-bottom: 1px solid #E2E9F1;" ng-src="{{val2.cover}}">                
-                                </div>
-                                <div style="padding: 10px; text-align: left; margin: 10px 0px; font-size: 12pt; min-height: 45px;" >
-                                    <div class="profile-title">
-                                        {{val2.title}}
-                                        <img ng-if="val2.type == 'UI/UX' && val2.icon.indexOf('pc') != -1" src="img/icon/icon_pc.png" style="float: right; margin-left: 10px;">
-                                        <img ng-if="val2.type == 'UI/UX' && val2.icon.indexOf('mobile') != -1" src="img/icon/icon_phone.png" style="float: right; margin-left: 10px;">
-                                    </div>
-                                    <div class="profile-sub-title">{{val2.subTitle}}</div>
-                                    <p class="profile-desc" ng-bind-html="thisCanBeusedInsideNgBindHtml(val2.description)">
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                    </ng-template>
+                    </div>
+                    </a>
                 </div>
             </div>
         </div>
