@@ -85,11 +85,15 @@ header ul {
 }
 header .responsible {
     font-size: 14px;
+    z-index: 1;
 }
 header .responsible {
     position: relative;
     left: 3%;
     display: block;
+}
+header .responsible  a:hover {
+    text-decoration: underline;
 }
 /* header end */
 
